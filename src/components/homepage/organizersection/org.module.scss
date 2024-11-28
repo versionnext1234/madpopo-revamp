@@ -1,0 +1,64 @@
+@import "../../../assets/media";
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.orgSection {
+  @include paddingY;
+  .midText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: $Medium-500;
+    color: $main-title;
+    line-height: 0;
+    span {
+      img {
+        margin-right: 0.5rem;
+      }
+      &.boldText {
+        font-weight: $Bold-700;
+        padding-left: 0.8rem !important;
+      }
+    }
+  }
+  .excelenceWrap {
+    text-align: center;
+    margin-top: 2rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      li {
+        font-size: 2rem;
+        color: $sub-title;
+        padding: 0 2rem !important;
+        &:nth-child(2) {
+          border-left: 0.2rem solid #ccc;
+          border-right: 0.2rem solid #ccc;
+        }
+        span {
+          &.boldTextSpan {
+            font-weight: $Bold-700;
+          }
+          &.colorBoldText {
+            color: $orange-color;
+            padding-right: 0.5rem !important;
+          }
+          img {
+            margin: 0 0.5rem;
+          }
+        }
+        a {
+          color: $sub-title;
+          line-height: 0;
+          display: block;
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

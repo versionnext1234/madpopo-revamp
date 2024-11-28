@@ -1,0 +1,24 @@
+@import "../../../assets/variables";
+@import "../../../assets/media";
+
+.topSection {
+  background-color: $orange-color;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-weight: $Medium-500;
+    font-size: 1.7rem;
+    color: $white-color;
+    @include d-desktop {
+      font-size: 1.4rem;
+    }
+    @include x-767-tablet {
+      font-size: 1.2rem;
+    }
+    b {
+      font-weight: $Bold-700;
+    }
+  }
+}

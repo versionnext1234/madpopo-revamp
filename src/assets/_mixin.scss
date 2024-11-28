@@ -1,0 +1,61 @@
+@import "../assets/variables";
+@import "../assets/media";
+
+@mixin paddingY {
+  padding: 4rem 0;
+}
+
+@mixin commonBorder {
+  border: 0.2rem solid $orange-color;
+}
+
+@mixin btns {
+  height: 5rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  font-size: 1.7rem;
+  font-weight: $SemiBold-600;
+  text-transform: capitalize;
+  line-height: 0;
+  @include d-desktop {
+    font-size: 1.5rem;
+    height: 4rem;
+  }
+}
+@mixin solidBtn {
+  background-color: $orange-color;
+  color: $white-color;
+  gap: 0.5rem;
+  &:hover {
+    color: $orange-color;
+    background-color: $white-color;
+  }
+}
+@mixin transparentBtns {
+  background-color: transparent;
+  color: $orange-color;
+  gap: 0.5rem;
+  &:hover {
+    background-color: $orange-color;
+    color: $white-color;
+  }
+}
+
+@mixin sectionTitle {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: $Bold-700;
+  color: $main-title;
+  text-align: center;
+}
+
+@mixin paraText {
+  font-size: 1.8rem;
+  font-weight: $Medium-500;
+  color: $para-text;
+  text-align: center;
+  margin-top: 1rem;
+}

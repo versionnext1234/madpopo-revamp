@@ -1,0 +1,14 @@
+@import "../../../../assets/mixin";
+.commonBtn {
+  @include btns;
+}
+.solidBtn {
+  @include solidBtn;
+  &:hover {
+    @include commonBorder;
+  }
+}
+.transparentBtn {
+  @include transparentBtns;
+  @include commonBorder;
+}

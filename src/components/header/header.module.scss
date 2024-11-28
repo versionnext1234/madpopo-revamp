@@ -1,0 +1,74 @@
+@import "../../assets/mixin";
+@import "../../assets/variables";
+@import "../../assets/media";
+
+#headerSection {
+  .navbarexpandlg {
+    padding: 2rem 0;
+    .leftWrap {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .formControl {
+        font-size: 1.6rem;
+        font-weight: $SemiBold-600;
+        color: $sub-title;
+        border: 0;
+        @include d-desktop{
+          font-size: 1.4rem;
+        }
+        cursor: pointer;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .rightWrap {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      @include mid-991-tab{
+        display: none;
+      }
+      .phnNumWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        a {
+          font-size: 2rem;
+          font-weight: $Bold-700;
+          color: $orange-color;
+          @include d-desktop{
+            font-size: 1.6rem;
+          }
+        }
+        span {
+          font-size: 1.4rem;
+          font-weight: $Medium-500;
+          color: $light-title;
+          @include d-desktop{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .navbarCollapse {
+      justify-content: center;
+      .navbarNav {
+        gap: 3rem;
+        .navItem {
+          .navLink {
+            font-size: 1.8rem;
+            font-weight: $Medium-500;
+            color: $sub-title;
+            @include d-desktop{
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

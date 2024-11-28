@@ -1,0 +1,20 @@
+@import "../../assets/media";
+@import "../../assets/mixin";
+@import "../../assets/variables";
+
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  @include paddingY;
+}
+
+.tabHeaders {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgb(255 230 212 / 14%) 0%,
+    rgb(252, 243, 231) 51%,
+    rgb(255 230 212 / 14%) 100%
+  );
+}

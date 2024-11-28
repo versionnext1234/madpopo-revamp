@@ -1,0 +1,174 @@
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+@import "../../../assets/media";
+
+.banerSection {
+  position: relative;
+  @include paddingY;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  @include mid-991-tab {
+    margin-top: 2rem;
+  }
+  @include x-767-tablet {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .leftBox {
+    .offerTag {
+      background-color: $light-orange-color;
+      width: fit-content;
+      padding: 0.6rem 1.5rem;
+      border-radius: 5rem;
+      @include commonBorder;
+      margin-bottom: 1rem;
+      @include x-767-tablet {
+        margin: 0 auto 1rem;
+      }
+      span {
+        font-size: 1.6rem;
+        font-weight: $Medium-500;
+        color: $orange-color;
+        @include d-desktop {
+          font-size: 1.6rem;
+        }
+        @include x-767-tablet {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    h1 {
+      color: $main-title;
+      font-weight: $Bold-700;
+      font-size: 6.3rem;
+      line-height: 1.2;
+      @include d-desktop {
+        font-size: 4.6rem;
+        width: 70%;
+      }
+      @include mid-991-tab {
+        width: 45%;
+        font-size: 3.2rem;
+      }
+      @include x-767-tablet {
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2.8rem;
+      }
+    }
+    .listWrap {
+      display: flex;
+      gap: 5rem;
+      margin-top: 1rem;
+      @include mid-991-tab {
+        gap: 0rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      @include x-767-tablet {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        line-height: 2.4;
+        li {
+          font-size: 1.8rem;
+          font-weight: $Medium-500;
+          color: $sub-title;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          @include d-desktop {
+            font-size: 1.6rem;
+          }
+          @include x-767-tablet {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .priciningWrap {
+      width: fit-content;
+      padding: 2rem 0;
+      @include x-767-tablet {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      h2 {
+        font-size: 4rem;
+        font-weight: $Bold-700;
+        color: $main-title;
+        @include d-desktop {
+          font-size: 3.4rem;
+        }
+        @include x-767-tablet {
+          font-size: 2.8rem;
+        }
+        span {
+          font-size: 1.8rem;
+          font-weight: $SemiBold-600;
+          color: $orange-color;
+          @include d-desktop {
+            font-size: 1.6rem;
+          }
+          @include x-767-tablet {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .spanText {
+      margin: 1.5rem 0;
+      font-size: 1.8rem;
+      font-weight: $Medium-500;
+      color: $sub-title;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include d-desktop {
+        font-size: 1.6rem;
+      }
+      @include mid-991-tab {
+        justify-content: center;
+      }
+      @include x-767-tablet {
+        font-size: 1.4rem;
+      }
+    }
+    .btnsWrap {
+      display: flex;
+      gap: 1.5rem;
+      @include mid-991-tab {
+        justify-content: center;
+      }
+    }
+  }
+  .rightBox {
+    position: absolute;
+    width: 55%;
+    right: 5.5%;
+    top: 0;
+    @include d-desktop {
+      width: 58%;
+      right: 2%;
+    }
+    @include mid-991-tab {
+      width: 65%;
+    }
+    @include x-767-tablet {
+      display: none;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}
