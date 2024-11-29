@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export const metadata = {
-  title: "About Us",
+  title: "contact us",
   description:
     "MadPopo high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
   keywords:
@@ -33,9 +33,9 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-        <h1>About Page</h1>
+      <h1>Contact Us  Page</h1>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

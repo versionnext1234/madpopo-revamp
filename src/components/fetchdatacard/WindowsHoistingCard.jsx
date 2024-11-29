@@ -2,12 +2,12 @@ import mockData from "@/mockdata/mockData";
 import PricingCard from "../common/card/PriciningCard";
 import CardSlider from "../common/slider/CardSlider";
 
-const WordpressHostingCard = () => {
-  const hostingPlans = mockData.WordPressHosting;
+const WindowsHoistingCard = () => {
+  const windowsData = mockData.WindowsHosting;
 
   return (
     <CardSlider>
-      {hostingPlans.map((item, index) => (
+      {windowsData.map((item, index) => (
         <PricingCard
           key={index}
           title={item.name}
@@ -25,4 +25,4 @@ const WordpressHostingCard = () => {
   );
 };
 
-export default WordpressHostingCard;
+export default WindowsHoistingCard;

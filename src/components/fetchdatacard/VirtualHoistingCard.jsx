@@ -1,13 +1,14 @@
 import mockData from "@/mockdata/mockData";
-import PricingCard from "../common/card/PriciningCard";
+import React from "react";
 import CardSlider from "../common/slider/CardSlider";
+import PricingCard from "../common/card/PriciningCard";
 
-const WordpressHostingCard = () => {
-  const hostingPlans = mockData.WordPressHosting;
+const VirtualHoistingCard = () => {
+  const virtualData = mockData.VirtualHosting;
 
   return (
     <CardSlider>
-      {hostingPlans.map((item, index) => (
+      {virtualData.map((item, index) => (
         <PricingCard
           key={index}
           title={item.name}
@@ -18,11 +19,10 @@ const WordpressHostingCard = () => {
           websites={item.features.websites}
           storage={item.features.storage}
           visits={item.features.visits}
-          clssName={item.clssName}
         />
       ))}
     </CardSlider>
   );
 };
 
-export default WordpressHostingCard;
+export default VirtualHoistingCard;

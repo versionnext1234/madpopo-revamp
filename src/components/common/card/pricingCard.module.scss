@@ -1,0 +1,88 @@
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.cardItems {
+  line-height: 4rem;
+  @include commonBorder;
+  padding: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+
+  &.cardItemsBg{
+
+  }
+
+  .titleParagraph {
+    h5 {
+      @include sectionTitle;
+      font-size: 2.6rem;
+      text-align: left;
+    }
+    span {
+      font-size: 1.6rem;
+      font-weight: $Medium-500;
+      color: $orange-color;
+    }
+  }
+
+  .discountWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0 1.5rem;
+    .savePerWrap {
+      background-color: $light-orange-color;
+      width: fit-content;
+      padding: 0.1rem 1.5rem;
+      border-radius: 1rem;
+      span {
+        font-size: 1.6rem;
+        font-weight: $SemiBold-600;
+        color: $orange-color;
+      }
+    }
+    .delAmt {
+      .del {
+        color: $para-text;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .priciningWrap {
+    width: fit-content;
+    h6 {
+      font-size: 4rem;
+      font-weight: $Bold-700;
+      color: $main-title;
+    }
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-weight: $Medium-500;
+    color: $main-title;
+    line-height: 1.8rem;
+  }
+
+  .dataListWrap {
+    font-size: 1.5rem;
+    font-weight: $Medium-500;
+    color: $main-title;
+  }
+
+  .seeBtnWrap {
+    padding: 1rem 0;
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: $SemiBold-600;
+      color: $orange-color;
+    }
+  }
+}

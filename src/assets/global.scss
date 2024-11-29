@@ -69,3 +69,33 @@ input {
 .commonPara {
   @include paraText;
 }
+
+.midClass {
+  .slick-container {
+    .slick-slider {
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            .extraBox{
+              display: none;
+            }
+            &:nth-child(2){
+              .extraBox{
+                display: block;
+                // background-color: $orange-color;
+              }
+              a{
+                background-color: #ff6a00;
+                color: #fff;
+                &:hover{
+                  background-color: #df5d00;
+                  border-color: #df5d00;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
