@@ -1,0 +1,86 @@
+.cardItems {
+  line-height: 4rem;
+  border: 0.2rem solid #ff6a00;
+  padding: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.cardItems .titleParagraph h5 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #123455;
+  text-align: center;
+  font-size: 2.6rem;
+  text-align: left;
+}
+.cardItems .titleParagraph span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ff6a00;
+}
+.cardItems .discountWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0 1.5rem;
+}
+.cardItems .discountWrap .savePerWrap {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.1rem 1.5rem;
+  border-radius: 1rem;
+}
+.cardItems .discountWrap .savePerWrap span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
+.cardItems .discountWrap .delAmt .del {
+  color: #707070;
+  font-size: 1.6rem;
+}
+.cardItems .priciningWrap {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cardItems .priciningWrap h6 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #123455;
+}
+.cardItems span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #123455;
+  line-height: 1.8rem;
+}
+.cardItems .dataListWrap {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #123455;
+}
+.cardItems .seeBtnWrap {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.cardItems .seeBtnWrap p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
+.cardItems .seeBtnWrap p .arrowIcon {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.cardItems .seeBtnWrap p .rotated {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=pricingCard.module.css.map */

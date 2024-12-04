@@ -1,0 +1,49 @@
+.tabItem {
+  padding: 10px;
+  height: 6.8rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #707070;
+  position: relative;
+}
+.tabItem span {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #ff6a00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabItem span i {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.tabItem.active {
+  background-color: #ff6a00;
+  border-radius: 5rem;
+  color: #ffffff;
+}
+.tabItem.active::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff6a00;
+  bottom: -1rem;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.tabItem.active span {
+  background-color: #ffffff;
+}
+.tabItem.active span i {
+  color: #ff6a00;
+}/*# sourceMappingURL=tabButton.module.css.map */

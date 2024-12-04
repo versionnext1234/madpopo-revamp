@@ -4,6 +4,7 @@ import CardSlider from "../common/slider/CardSlider";
 
 const LinuxHostingCard = () => {
   const linuxData = mockData.LinuxWebHoisting;
+  console.log("linuxData", linuxData)
       {/* {linuxData.map((item, index) => (
         <PriciningCard key={index} title={item.title} />
       ))} */}
@@ -21,6 +22,8 @@ const LinuxHostingCard = () => {
           websites={item.features.websites}
           storage={item.features.storage}
           visits={item.features.visits}
+          clssName={item.clssName}
+          managed_wordpress={item.features.hosting.managed_wordpress}
         />
       ))}
     </CardSlider>

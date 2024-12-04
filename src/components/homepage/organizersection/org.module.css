@@ -1,0 +1,56 @@
+.orgSection {
+  padding: 4rem 0;
+}
+.orgSection .midText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #123455;
+  line-height: 0;
+}
+.orgSection .midText span img {
+  margin-right: 0.5rem;
+}
+.orgSection .midText span.boldText {
+  font-weight: 700;
+  padding-left: 0.8rem !important;
+}
+.orgSection .excelenceWrap {
+  text-align: center;
+  margin-top: 2rem;
+}
+.orgSection .excelenceWrap ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.orgSection .excelenceWrap ul li {
+  font-size: 2rem;
+  color: #262626;
+  padding: 0 2rem !important;
+}
+.orgSection .excelenceWrap ul li:nth-child(2) {
+  border-left: 0.2rem solid #ccc;
+  border-right: 0.2rem solid #ccc;
+}
+.orgSection .excelenceWrap ul li span.boldTextSpan {
+  font-weight: 700;
+}
+.orgSection .excelenceWrap ul li span.colorBoldText {
+  color: #ff6a00;
+  padding-right: 0.5rem !important;
+}
+.orgSection .excelenceWrap ul li span img {
+  margin: 0 0.5rem;
+}
+.orgSection .excelenceWrap ul li a {
+  color: #262626;
+  line-height: 0;
+  display: block;
+}
+.orgSection .excelenceWrap ul li a img {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=org.module.css.map */

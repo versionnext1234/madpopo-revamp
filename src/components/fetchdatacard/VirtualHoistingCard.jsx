@@ -19,6 +19,7 @@ const VirtualHoistingCard = () => {
           websites={item.features.websites}
           storage={item.features.storage}
           visits={item.features.visits}
+          clssName={item.clssName}
         />
       ))}
     </CardSlider>

@@ -8,10 +8,7 @@
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 1rem;
-
-  &.cardItemsBg{
-
-  }
+  position: relative;
 
   .titleParagraph {
     h5 {
@@ -75,6 +72,7 @@
 
   .seeBtnWrap {
     padding: 1rem 0;
+    cursor: pointer;
     p {
       display: flex;
       justify-content: center;
@@ -83,6 +81,13 @@
       font-size: 1.8rem;
       font-weight: $SemiBold-600;
       color: $orange-color;
+      .arrowIcon {
+        transition: transform 0.3s ease;
+        display: inline-block;
+      }
+      .rotated {
+        transform: rotate(180deg);
+      }
     }
   }
 }

@@ -1,5 +1,7 @@
 import SectionTitle from "@/components/common/sectiontitle/SectionTitle";
 import BannerSection from "@/components/homepage/bannersection/BannerSection";
+import HoistingBanner from "@/components/homepage/HoistingBannerSection/HoistingBanner";
+import OptimizeBannerHeading from "@/components/homepage/optimizeSesction/OptimizeBannerHeading";
 import OrganizerSection from "@/components/homepage/organizersection/OrganizerSection";
 import PlansSection from "@/components/homepage/planstabs/PlansSection";
 
@@ -40,6 +42,8 @@ export default function Home() {
       <BannerSection />
       <OrganizerSection />
       <PlansSection/>
+      <OptimizeBannerHeading />
+      <HoistingBanner />
     </>
   );
 }

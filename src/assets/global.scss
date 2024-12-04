@@ -75,22 +75,50 @@ input {
     .slick-slider {
       .slick-list {
         .slick-track {
+          padding-top: 5rem;
           .slick-slide {
-            .extraBox{
-              display: none;
-            }
-            &:nth-child(2){
-              .extraBox{
-                display: block;
-                // background-color: $orange-color;
+            &:nth-child(2) {
+              h5 {
+                margin-top: 1.5rem;
               }
-              a{
+              a {
                 background-color: #ff6a00;
                 color: #fff;
-                &:hover{
+                &:hover {
                   background-color: #df5d00;
                   border-color: #df5d00;
                 }
+              }
+            }
+            .wordpressExtraDiv {
+              content: "Most Frequently Chosen Packageeeeeeeeeeeee";
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+            .linuxExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+            .windowsExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+            .virtualExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+            .businessExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
               }
             }
           }

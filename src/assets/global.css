@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Urbanist", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+ul,
+ol {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+ul li,
+ol li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+button {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+p,
+span,
+strong,
+b,
+a,
+li,
+input {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.sectionTitle {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #123455;
+  text-align: center;
+}
+
+.commonPara {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #707070;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.midClass .slick-container .slick-slider .slick-list .slick-track {
+  padding-top: 5rem;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide:nth-child(2) h5 {
+  margin-top: 1.5rem;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide:nth-child(2) a {
+  background-color: #ff6a00;
+  color: #fff;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide:nth-child(2) a:hover {
+  background-color: #df5d00;
+  border-color: #df5d00;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .wordpressExtraDiv {
+  content: "Most Frequently Chosen Packageeeeeeeeeeeee";
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .wordpressExtraDiv::before {
+  content: "";
+  content: "Most Frequently Chosen Package";
+  height: 6rem;
+  width: 101%;
+  background-color: #ff6a00;
+  position: absolute;
+  top: -50px;
+  left: -2px;
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-image: url("/images/card/extraDiv.svg");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 4rem center;
+  padding-left: 7.5rem;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .linuxExtraDiv::before {
+  content: "";
+  content: "Most Frequently Chosen Package";
+  height: 6rem;
+  width: 101%;
+  background-color: #ff6a00;
+  position: absolute;
+  top: -50px;
+  left: -2px;
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-image: url("/images/card/extraDiv.svg");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 4rem center;
+  padding-left: 7.5rem;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .windowsExtraDiv::before {
+  content: "";
+  content: "Most Frequently Chosen Package";
+  height: 6rem;
+  width: 101%;
+  background-color: #ff6a00;
+  position: absolute;
+  top: -50px;
+  left: -2px;
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-image: url("/images/card/extraDiv.svg");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 4rem center;
+  padding-left: 7.5rem;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .virtualExtraDiv::before {
+  content: "";
+  content: "Most Frequently Chosen Package";
+  height: 6rem;
+  width: 101%;
+  background-color: #ff6a00;
+  position: absolute;
+  top: -50px;
+  left: -2px;
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-image: url("/images/card/extraDiv.svg");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 4rem center;
+  padding-left: 7.5rem;
+}
+.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .businessExtraDiv::before {
+  content: "";
+  content: "Most Frequently Chosen Package";
+  height: 6rem;
+  width: 101%;
+  background-color: #ff6a00;
+  position: absolute;
+  top: -50px;
+  left: -2px;
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-image: url("/images/card/extraDiv.svg");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 4rem center;
+  padding-left: 7.5rem;
+}/*# sourceMappingURL=global.css.map */

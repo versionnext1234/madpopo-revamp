@@ -59,3 +59,41 @@
   text-align: center;
   margin-top: 1rem;
 }
+
+@mixin titleWrap {
+    background-color: $light-orange-color;
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    margin: auto;
+}
+
+@mixin titleWrapPara {
+    font-size: 1.6rem;
+    font-weight: $SemiBold-600;
+    color: $orange-color;
+}
+
+@mixin extraDivWrap {
+  content: "Most Frequently Chosen Package";
+  height: 6rem;
+  width: 101%;
+  background-color: #ff6a00;
+  position: absolute;
+  top: -50px;
+  left: -2px;
+  z-index: -1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-image: url("/images/card/extraDiv.svg");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 4rem center;
+  padding-left: 7.5rem;
+}

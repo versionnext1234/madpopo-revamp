@@ -1,0 +1,58 @@
+.optimizeSection {
+  background-color: #F4F5FF;
+  padding: 4rem 0;
+}
+.optimizeSection .optimizeWrap {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.optimizeSection .optimizeWrap p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
+.optimizeSection .headingSection {
+  margin: 1rem 0 3rem;
+}
+.optimizeSection .backgroundColor {
+  background-color: #ffecdf;
+  border: 0.2rem solid #ff6a00;
+  border-width: 0.1rem;
+  border-radius: 10px;
+}
+.optimizeSection .backgroundColor .wrapContainer {
+  display: flex;
+  align-items: center;
+}
+.optimizeSection .backgroundColor .wrapContainer .imageContainer {
+  width: 50%;
+}
+.optimizeSection .backgroundColor .wrapContainer .imageContainer img {
+  width: 100%;
+}
+.optimizeSection .backgroundColor .wrapContainer .featuresContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+  width: 50%;
+  padding: 4rem;
+}
+.optimizeSection .backgroundColor .wrapContainer .featuresContainer .icon {
+  background-color: #ff6a00;
+  width: 36px;
+  border-radius: 10px;
+  height: 36px;
+}
+.optimizeSection .backgroundColor .wrapContainer .featuresContainer h3 {
+  font-size: 2rem;
+  color: #123455;
+}
+.optimizeSection .backgroundColor .wrapContainer .featuresContainer p {
+  font-size: 1.6rem;
+  color: #707070;
+  margin-top: 1rem;
+}/*# sourceMappingURL=optimizePerformance.module.css.map */

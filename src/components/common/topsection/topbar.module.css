@@ -1,0 +1,25 @@
+.topSection {
+  background-color: #ff6a00;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topSection p {
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .topSection p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .topSection p {
+    font-size: 1.2rem;
+  }
+}
+.topSection p b {
+  font-weight: 700;
+}/*# sourceMappingURL=topbar.module.css.map */
