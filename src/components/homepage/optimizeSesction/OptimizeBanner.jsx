@@ -17,7 +17,7 @@ const OptimizeBanner = () => {
                 <i className={feature.icon} />
               </div>
               <h3>
-                <b>{feature.boldText}</b> {feature.title}.
+                <b>{feature.boldText}</b> {feature.title}
               </h3>
               <p>{feature.description}</p>
             </div>

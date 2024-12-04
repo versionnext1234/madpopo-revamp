@@ -4,6 +4,7 @@ import HoistingBanner from "@/components/homepage/HoistingBannerSection/Hoisting
 import OptimizeBannerHeading from "@/components/homepage/optimizeSesction/OptimizeBannerHeading";
 import OrganizerSection from "@/components/homepage/organizersection/OrganizerSection";
 import PlansSection from "@/components/homepage/planstabs/PlansSection";
+import GuaranteeBanner from "@/components/homepage/guaranteeBannerSection/GuaranteeBanner";
 
 export const metadata = {
   title: "MadPopo Web Hosting Solutions: Secure, Scalable, Affordable",
@@ -44,6 +45,7 @@ export default function Home() {
       <PlansSection/>
       <OptimizeBannerHeading />
       <HoistingBanner />
+      <GuaranteeBanner />
     </>
   );
 }
