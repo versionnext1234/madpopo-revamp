@@ -1,6 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import styles from "../../homepage/optimizeSesction/optimizePerformance.module.scss";
-import featureData from "../optimizeSesction/mockdata";
+import featureData from "../../../mockdata/optimizeMockdata";
 
 const OptimizeBanner = () => {
   return (

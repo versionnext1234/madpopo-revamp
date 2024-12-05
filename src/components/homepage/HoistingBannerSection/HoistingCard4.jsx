@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../HoistingBannerSection/hoistingBanner.module.scss";
 
 const HoistingCard4 = ({ heading, paragraph1 }) => {
@@ -6,7 +7,13 @@ const HoistingCard4 = ({ heading, paragraph1 }) => {
       <h3>{heading}</h3>
       <p>{paragraph1}</p>
 
-      <img src="images\hoistingBanner\hoistingCard4.png" alt="" width={470} />
+      <Image
+        src="/images/hoistingBanner/hoistingCard4.png"
+        alt="hoistingCard4"
+        width={1300}
+        height={1200}
+        className="img-fluid"
+      />
     </div>
   );
 };

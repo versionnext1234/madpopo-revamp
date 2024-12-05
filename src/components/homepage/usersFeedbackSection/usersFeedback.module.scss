@@ -1,0 +1,71 @@
+@import "../../../assets/media";
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.feedbackWrap {
+  padding: 4rem 0;
+  .heading {
+    @include titleWrap;
+    p {
+      @include titleWrapPara;
+    }
+  }
+  .title {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .feedbackScroller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .feedbackContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    .feedbackCard {
+      //   width: 42%;
+      width: 500px;
+      height: auto;
+      border-radius: 1.6rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      .paragraph {
+        color: #6b6b78;
+        font-size: 1.6rem;
+        font-family: "Plus Jakarta Sans";
+      }
+      .btmText {
+        display: flex;
+        justify-content: space-between;
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            i {
+                font-size: 3rem;
+            }
+        }
+        h6 {
+          font-size: 1.4rem;
+          font-weight: $Bold-700;
+          font-family: "Plus Jakarta Sans";
+          color: #2e2e2e;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: $Regular-400;
+          font-family: "Plus Jakarta Sans";
+          color: #6b6b78;
+        }
+      }
+    }
+  }
+}

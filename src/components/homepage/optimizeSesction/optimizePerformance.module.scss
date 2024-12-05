@@ -18,7 +18,7 @@
   }
 
   .backgroundColor {
-    background-color: #ffecdf;
+    background-color: $banner-background;
     @include commonBorder;
     border-width: 0.1rem;
     border-radius: 1.1rem;

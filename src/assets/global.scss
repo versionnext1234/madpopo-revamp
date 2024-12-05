@@ -91,7 +91,6 @@ input {
               }
             }
             .wordpressExtraDiv {
-              content: "Most Frequently Chosen Packageeeeeeeeeeeee";
               &::before {
                 content: "";
                 @include extraDivWrap;

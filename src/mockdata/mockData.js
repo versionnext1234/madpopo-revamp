@@ -91,7 +91,7 @@ const mockData = {
     },
     {
       name: "Cloud Startup 1",
-      clssName: "",
+      clssName: "wordpressExtraDiv",
       description: "Optimised performance & guaranteed resources.",
       price: {
         discounted: "699.00",

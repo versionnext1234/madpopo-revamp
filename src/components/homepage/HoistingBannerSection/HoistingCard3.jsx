@@ -1,4 +1,5 @@
 "use client";
+import Profile from "@/components/common/profile/profile";
 import styles from "../HoistingBannerSection/hoistingBanner.module.scss";
 import { useState } from "react";
 
@@ -20,26 +21,7 @@ const HoistingCard3 = ({ heading, paragraph1, paragraph2 }) => {
           <p>{paragraph2}</p>
         </div>
 
-        <div className={styles.avatarContainer}>
-          <div className={styles["avatar-container-item"]}>
-            <img
-              src="images\hoistingBanner\dummuProfileImg.png"
-              alt="Avatar 1"
-            />
-          </div>
-          <div className={styles["avatar-container-item"]}>
-            <img
-              src="images\hoistingBanner\dummyProfielImg2.svg"
-              alt="Avatar 2"
-            />
-          </div>
-          <div className={styles["avatar-container-item"]}>
-            <img
-              src="images\hoistingBanner\dummuProfileImg.png"
-              alt="Avatar 3"
-            />
-          </div>
-        </div>
+        <Profile />
       </div>
     </div>
   );
