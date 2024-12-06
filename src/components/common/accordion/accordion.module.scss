@@ -25,7 +25,7 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
-      padding: 1rem;
+      padding: 2.5rem;
       color: #666;
       span {
         flex: 1;
@@ -36,10 +36,17 @@
       }
       .accordionIcon {
         position: absolute;
-        right: 1rem;
+        right: 2.5rem;
         font-size: 2.5rem;
         transition: transform 0.2s, color 0.2s;
         color: #6f6c90;
+        background-color: #F7F7FF;
+        height: 3.5rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.8rem;
       }
     }
 
@@ -48,11 +55,15 @@
       overflow: hidden;
       padding: 0;
       transition: max-height 0.5s ease, padding 0.5s ease;
-
       &.open {
         max-height: 1000px;
-        padding: 1rem;
+        padding: 2rem;
         overflow: visible;
+      }
+      p {
+        @include paraText;
+        font-size: 1.6rem;
+        text-align: left;
       }
     }
   }

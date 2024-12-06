@@ -15,29 +15,32 @@ const Accordion = () => {
     <div className={styles.accordions}>
       {accordionData.map((item, index) => (
         <div
-          key={item.id}
-          className={`${styles.accordion} ${
-            openIndex === index ? styles.open : ""
-          }`}
+        key={item.id}
+        className={`${styles.accordion} ${
+          openIndex === index ? styles.open : ""
+        }`}
+      >
+        <div
+          className={styles.accordionHeader}
+          onClick={() => toggleAccordion(index)}
         >
-          <div
-            className={styles.accordionHeader}
-            onClick={() => toggleAccordion(index)}
-          >
-            <span>{item.question}</span>
-            <span className={styles.accordionIcon}>
-              {openIndex === index ? "-" : "+"}
-            </span>
-          </div>
-          {/* Render content conditionally to avoid unintended display */}
-          <div
-            className={`${styles.accordionContent} ${
+          <span>{item.question}</span>
+          <span
+            className={`${styles.accordionIcon} ${
               openIndex === index ? styles.open : ""
             }`}
           >
-            <p>{item.answer}</p>
-          </div>
+            {openIndex === index ? "-" : "+"}
+          </span>
         </div>
+        <div
+          className={`${styles.accordionContent} ${
+            openIndex === index ? styles.open : ""
+          }`}
+        >
+          <p>{item.answer}</p>
+        </div>
+      </div>
       ))}
     </div>
   );
