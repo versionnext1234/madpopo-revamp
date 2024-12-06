@@ -9,58 +9,51 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-}
+
   .accordion {
     margin-bottom: 1rem;
     overflow: hidden;
     transition: border-color 0.5s ease;
     background-color: #ffffff;
-    border-radius: 1rem;
-    height: 50px;
+    border-radius: 1.6rem;
+    min-height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    &.open {
-      border-color: #000;
-      background-color: #fff;
-      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    }
-
-    .accordion__header {
+    .accordionHeader {
       cursor: pointer;
-      font-weight: 500;
-      font-size: 1.2rem;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       position: relative;
       padding: 1rem;
       color: #666;
       span {
         flex: 1;
+        font-size: 2rem;
+        font-weight: $SemiBold-600;
+        color: $main-title;
+        font-family: $font-family-base;
       }
-
-      .accordion__icon {
+      .accordionIcon {
         position: absolute;
         right: 1rem;
-        font-size: 1.5rem; // Adjust size of the + and - signs
-        line-height: 0;
+        font-size: 2.5rem;
         transition: transform 0.2s, color 0.2s;
-        color: #666; // Default color for the icon
-      }
-
-      &.open .accordion__icon {
-        color: #000; // Change color when opened
+        color: #6f6c90;
       }
     }
-    .accordion__content {
+
+    .accordionContent {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.5s ease;
-      padding: 0 1em 1em;
-      display: flex;
-  justify-content: space-between; /* This will split content into two halves */
-  padding: 1rem;
-//   .left, .right {
-//     width: 48%; /* Slightly less than 50% to add space between the sections */
-//     padding: 0.5rem;
-//   }
+      padding: 0;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+
+      &.open {
+        max-height: 1000px;
+        padding: 1rem;
+        overflow: visible;
+      }
     }
   }
+}

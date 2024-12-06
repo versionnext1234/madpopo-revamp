@@ -6,12 +6,20 @@
   @include paddingY;
   .backgroundColor {
     background-color: $background-color;
-    padding: 2rem 0;
+    padding: 3rem 0;
     .heading {
       @include titleWrap;
       p {
         @include titleWrapPara;
       }
+    }
+
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
   }
 }

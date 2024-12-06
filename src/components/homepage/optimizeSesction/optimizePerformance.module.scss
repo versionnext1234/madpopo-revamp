@@ -55,9 +55,9 @@
           color: $main-title;
         }
         p {
+          @include paraText;
           font-size: 1.6rem;
-          color: $para-text;
-          margin-top: 1rem;
+          text-align: left;
         }
       }
     }
