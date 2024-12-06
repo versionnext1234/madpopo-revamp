@@ -7,6 +7,7 @@ const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
+    // Only toggle the clicked accordion
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -20,19 +21,22 @@ const Accordion = () => {
           }`}
         >
           <div
-            className={styles.accordion__header}
+            className={styles.accordionHeader}
             onClick={() => toggleAccordion(index)}
           >
             <span>{item.question}</span>
-            <span className={styles.accordion__icon}>
+            <span className={styles.accordionIcon}>
               {openIndex === index ? "-" : "+"}
             </span>
           </div>
-          {openIndex === index && (
-            <div className={styles.accordion__content}>
-              <p>{item.answer}</p>
-            </div>
-          )}
+          {/* Render content conditionally to avoid unintended display */}
+          <div
+            className={`${styles.accordionContent} ${
+              openIndex === index ? styles.open : ""
+            }`}
+          >
+            <p>{item.answer}</p>
+          </div>
         </div>
       ))}
     </div>
