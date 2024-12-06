@@ -1,0 +1,65 @@
+@import "../../../assets/media";
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.optimizeSection {
+  background-color: $background-color;
+  padding: 4rem 0;
+
+  .optimizeWrap {
+    @include titleWrap;
+    p {
+      @include titleWrapPara;
+    }
+  }
+
+  .headingSection {
+    margin: 1rem 0 3rem;
+  }
+
+  .backgroundColor {
+    background-color: $banner-background;
+    @include commonBorder;
+    border-width: 0.1rem;
+    border-radius: 1.1rem;
+    .wrapContainer {
+      display: flex;
+      align-items: center;
+      .imageContainer {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .featuresContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+        width: 50%;
+        padding: 4rem;
+        .icon {
+            background-color: #ff6a00;
+            width: 36px;
+            border-radius: 10px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: $white-color;
+                font-size: 2rem;
+            }
+        }
+        h3 {
+          font-size: 2rem;
+          color: $main-title;
+        }
+        p {
+          font-size: 1.6rem;
+          color: $para-text;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

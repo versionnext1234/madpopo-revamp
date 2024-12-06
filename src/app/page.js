@@ -1,7 +1,14 @@
 import SectionTitle from "@/components/common/sectiontitle/SectionTitle";
 import BannerSection from "@/components/homepage/bannersection/BannerSection";
+import HoistingBanner from "@/components/homepage/hoistingBannerSection/HoistingBanner";
+import OptimizeBannerHeading from "@/components/homepage/optimizeSesction/OptimizeBannerHeading";
 import OrganizerSection from "@/components/homepage/organizersection/OrganizerSection";
 import PlansSection from "@/components/homepage/planstabs/PlansSection";
+import GuaranteeBanner from "@/components/homepage/guaranteeBannerSection/GuaranteeBanner";
+import PopularApps from "@/components/homepage/popularAppsSection/PopularApps";
+import UsersFeedback from "@/components/homepage/usersFeedbackSection/UsersFeedback";
+import Domain from "@/components/homepage/domainSection/Domain";
+import QuestionSection from "@/components/homepage/freqaskQuestionSection/QuestionSection";
 
 export const metadata = {
   title: "MadPopo Web Hosting Solutions: Secure, Scalable, Affordable",
@@ -40,6 +47,13 @@ export default function Home() {
       <BannerSection />
       <OrganizerSection />
       <PlansSection/>
+      <OptimizeBannerHeading />
+      <HoistingBanner />
+      <GuaranteeBanner />
+      <PopularApps />
+      <UsersFeedback />
+      <Domain />
+      <QuestionSection />
     </>
   );
 }

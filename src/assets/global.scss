@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap");
 @import "../assets/variables";
 @import "../assets/mixin";
+
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +25,7 @@ ol {
   padding: 0 !important;
   margin-bottom: 0 !important;
 }
+
 ul li,
 ol li {
   list-style: none !important;
@@ -47,6 +49,7 @@ button {
 button {
   border: 0 !important;
   background-color: transparent !important;
+
   &:focus {
     outline: none !important;
     box-shadow: none !important;
@@ -63,9 +66,80 @@ input {
   padding: 0 !important;
   margin-bottom: 0 !important;
 }
+
 .sectionTitle {
   @include sectionTitle;
 }
+
 .commonPara {
   @include paraText;
 }
+
+.midClass {
+  .slick-container {
+    .slick-slider {
+      .slick-list {
+        .slick-track {
+          padding-top: 5rem;
+
+          .slick-slide {
+            &:nth-child(2) {
+              h5 {
+                margin-top: 1.5rem;
+              }
+
+              a {
+                background-color: #ff6a00;
+                color: #fff;
+
+                &:hover {
+                  background-color: #df5d00;
+                  border-color: #df5d00;
+                }
+              }
+            }
+
+            .wordpressExtraDiv {
+              content: "Most Frequently Chosen Packageeeeeeeeeeeee";
+
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+
+            .linuxExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+
+            .windowsExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+
+            .virtualExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+
+            .businessExtraDiv {
+              &::before {
+                content: "";
+                @include extraDivWrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

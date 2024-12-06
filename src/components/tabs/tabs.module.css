@@ -1,0 +1,11 @@
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.tabHeaders {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(255, 230, 212, 0.14) 0%, rgb(252, 243, 231) 51%, rgba(255, 230, 212, 0.14) 100%);
+}/*# sourceMappingURL=tabs.module.css.map */

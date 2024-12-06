@@ -1,0 +1,218 @@
+.banerSection {
+  position: relative;
+  padding: 4rem 0;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+@media (max-width: 991px) {
+  .banerSection {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+}
+.banerSection .leftBox .offerTag {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5rem;
+  border: 0.2rem solid #ff6a00;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .offerTag {
+    margin: 0 auto 1rem;
+  }
+}
+.banerSection .leftBox .offerTag span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ff6a00;
+}
+@media (max-width: 1024px) {
+  .banerSection .leftBox .offerTag span {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .offerTag span {
+    font-size: 1.4rem;
+  }
+}
+.banerSection .leftBox h1 {
+  color: #123455;
+  font-weight: 700;
+  font-size: 6.3rem;
+  line-height: 1.2;
+}
+@media (max-width: 1024px) {
+  .banerSection .leftBox h1 {
+    font-size: 4.6rem;
+    width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .banerSection .leftBox h1 {
+    width: 45%;
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox h1 {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.8rem;
+  }
+}
+.banerSection .leftBox .listWrap {
+  display: flex;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 991px) {
+  .banerSection .leftBox .listWrap {
+    gap: 0rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .listWrap {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.banerSection .leftBox .listWrap ul {
+  line-height: 2.4;
+}
+.banerSection .leftBox .listWrap ul li {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .banerSection .leftBox .listWrap ul li {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .listWrap ul li {
+    font-size: 1.4rem;
+  }
+}
+.banerSection .leftBox .priciningWrap {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem 0;
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .priciningWrap {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+.banerSection .leftBox .priciningWrap h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #123455;
+}
+@media (max-width: 1024px) {
+  .banerSection .leftBox .priciningWrap h2 {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .priciningWrap h2 {
+    font-size: 2.8rem;
+  }
+}
+.banerSection .leftBox .priciningWrap h2 span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
+@media (max-width: 1024px) {
+  .banerSection .leftBox .priciningWrap h2 span {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .priciningWrap h2 span {
+    font-size: 1.4rem;
+  }
+}
+.banerSection .leftBox .spanText {
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .banerSection .leftBox .spanText {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 991px) {
+  .banerSection .leftBox .spanText {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .leftBox .spanText {
+    font-size: 1.4rem;
+  }
+}
+.banerSection .leftBox .btnsWrap {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 991px) {
+  .banerSection .leftBox .btnsWrap {
+    justify-content: center;
+  }
+}
+.banerSection .rightBox {
+  position: absolute;
+  width: 55%;
+  right: 5.5%;
+  top: 0;
+}
+@media (max-width: 1024px) {
+  .banerSection .rightBox {
+    width: 58%;
+    right: 2%;
+  }
+}
+@media (max-width: 991px) {
+  .banerSection .rightBox {
+    width: 65%;
+  }
+}
+@media (max-width: 767px) {
+  .banerSection .rightBox {
+    display: none;
+  }
+}
+.banerSection .rightBox img {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}/*# sourceMappingURL=banner.module.css.map */

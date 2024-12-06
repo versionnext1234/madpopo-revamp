@@ -1,0 +1,92 @@
+@import "../../../assets/media";
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.backgroundWrap {
+  background-color: $banner-background;
+  @include commonBorder;
+  border-width: 0.1rem;
+  padding: 3.5rem;
+
+  .contentWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    .content {
+      p {
+        @include paraText;
+        width: 62%;
+        margin: 1rem auto;
+      }
+    }
+
+    .searchContainer {
+      background-color: $white-color;
+      width: 76%;
+      height: 50px;
+      padding: 1rem 0.3rem;
+      border-radius: 5rem;
+      @include commonBorder;
+      border-width: 0.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        border: none;
+        flex: 1;
+        font-size: 1.8rem;
+        font-weight: $Medium-500;
+        color: $main-title;
+        margin-left: 2.5rem;
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .priceWrap {
+      display: flex;
+      gap: 5rem;
+      .priceBox {
+        @include commonBorder;
+        border-width: 0.1rem;
+        border-radius: 0.5rem;
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        h6 {
+          font-size: 1.4rem;
+          font-weight: $SemiBold-600;
+          color: $main-title;
+        }
+        del {
+          font-size: 1.4rem;
+          font-weight: $Medium-500;
+          color: $para-text;
+        }
+      }
+    }
+
+    .transferLink {
+      p {
+        font-size: 1.8rem;
+        font-family: $Medium-500;
+        color: $para-text;
+        a {
+          font-size: 1.8rem;
+          font-weight: $Bold-700;
+          color: $main-title;
+        }
+      }
+    }
+  }
+}

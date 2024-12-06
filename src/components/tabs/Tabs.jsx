@@ -7,6 +7,9 @@ import CardSlider from "../common/slider/CardSlider";
 import PriciningCard from "../common/card/PriciningCard";
 import WordpressHostingCard from "../fetchdatacard/WordpressHostingCard";
 import LinuxHostingCard from "../fetchdatacard/LinuxHostingCard";
+import WindowsHoistingCard from "../fetchdatacard/WindowsHoistingCard";
+import VirtualHoistingCard from "../fetchdatacard/VirtualHoistingCard";
+import BusinessEmailCard from "../fetchdatacard/BusinessEmailCard";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab3");
@@ -17,7 +20,7 @@ const Tabs = () => {
     {
       id: "tab1",
       label: "Windows Web Hosting",
-      content: "",
+      content: <WindowsHoistingCard />,
       fontClass: "fa-windows",
     },
     {
@@ -35,13 +38,13 @@ const Tabs = () => {
     {
       id: "tab4",
       label: "Virtual Dedicated Hosting",
-      content: "",
+      content: <VirtualHoistingCard />,
       fontClass: "fa-cloud-download",
     },
     {
       id: "tab5",
       label: "Business Email",
-      content: "",
+      content: <BusinessEmailCard />,
       fontClass: "fa-envelope",
     },
   ];

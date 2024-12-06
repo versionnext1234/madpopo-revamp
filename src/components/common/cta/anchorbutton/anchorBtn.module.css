@@ -1,0 +1,42 @@
+.commonBtn {
+  height: 5rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 0;
+}
+@media (max-width: 1024px) {
+  .commonBtn {
+    font-size: 1.5rem;
+    height: 4rem;
+  }
+}
+
+.solidBtn {
+  background-color: #ff6a00;
+  color: #ffffff;
+  gap: 0.5rem;
+}
+.solidBtn:hover {
+  color: #ff6a00;
+  background-color: #ffffff;
+}
+.solidBtn:hover {
+  border: 0.2rem solid #ff6a00;
+}
+
+.transparentBtn {
+  background-color: transparent;
+  color: #ff6a00;
+  gap: 0.5rem;
+  border: 0.2rem solid #ff6a00;
+}
+.transparentBtn:hover {
+  background-color: #ff6a00;
+  color: #ffffff;
+}/*# sourceMappingURL=anchorBtn.module.css.map */

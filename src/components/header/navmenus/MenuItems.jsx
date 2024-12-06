@@ -22,7 +22,7 @@ const MenuItems = () => {
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <Link className="dropdown-item" href="/web-development">
+              <Link className="dropdown-item" href="/wordpresshosting">
                 Web Development
               </Link>
             </li>

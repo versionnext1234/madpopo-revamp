@@ -1,0 +1,59 @@
+@import "../../../assets/media";
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.backgroundColor {
+  background-color: $background-color;
+  padding: 6rem 0 3rem;
+  .bannerWrapper {
+    background-color: $banner-background;
+    @include commonBorder;
+    border-width: 0.1rem;
+    border-radius: 1.1rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding: 2rem 2rem 0;
+
+    .content {
+      width: 48%;
+      //   padding: 2rem;
+      h3 {
+        @include sectionTitle;
+        text-align: unset;
+      }
+      p {
+        @include paraText;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        text-align: unset;
+      }
+
+      .profileContainer {
+        display: flex;
+        gap: 18rem;
+        .profileComp {
+          margin-top: 2rem;
+          display: flex;
+          gap: 1rem;
+          .profileContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .heading h6 {
+              @include sectionTitle;
+              font-size: 2rem;
+            }
+          }
+          .paragraph {
+            p {
+              font-size: 1.4rem;
+              color: $para-text;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

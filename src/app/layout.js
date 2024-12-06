@@ -6,6 +6,7 @@ import TopBar from "@/components/common/topsection/TopBar";
 import { CurrencyProvider } from "@/context/CurrencyContext";
 import { useEffect } from "react";
 import Navbar from "@/components/header/navbar/Navbar";
+import CommonFooter from "@/components/homepage/footer/CommonFooter";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </CurrencyProvider>
+        <CommonFooter />
         <Script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" />
       </body>
     </html>

@@ -1,0 +1,17 @@
+@import "../../../assets/media";
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+
+.backgroundWrap {
+  @include paddingY;
+  .backgroundColor {
+    background-color: $background-color;
+    padding: 2rem 0;
+    .heading {
+      @include titleWrap;
+      p {
+        @include titleWrapPara;
+      }
+    }
+  }
+}
