@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../bannersection/banner.module.scss";
 const RightBox = () => {
-  return (
+  return ( 
     <div className={styles.rightBox}>
       <Image
         src="/images/banner/home-banner-image.svg"
