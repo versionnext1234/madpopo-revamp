@@ -4,7 +4,7 @@ import styles from "../freqaskQuestionSection/question.module.scss";
 import Accordion from "@/components/common/accordion/Accordion";
 import AnchorBtn from "@/components/common/cta/anchorbutton/AnchorBtn";
 
-const QuestionSection = () => {
+const QuestionSection = () => { 
   return (
     <div className={styles.backgroundWrap}>
       <div className={styles.backgroundColor}>

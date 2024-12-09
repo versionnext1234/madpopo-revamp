@@ -13,66 +13,60 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/common/accordion/accordion.module.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.accordion_accordions__8Kjx7 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
 .accordion_accordion__CAPPs {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
   margin-bottom: 1rem;
+  overflow: hidden;
   transition: border-color 0.5s ease;
   background-color: #ffffff;
-  border-radius: 1.6rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  height: 50px;
 }
-.accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.accordion_accordion__CAPPs.accordion_open__cSJdn {
+  border-color: #000;
+  background-color: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.accordion_accordion__CAPPs .accordion_accordion__header__VI8ji {
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding: 2.5rem;
+  padding: 1rem;
   color: #666;
 }
-.accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac span {
+.accordion_accordion__CAPPs .accordion_accordion__header__VI8ji span {
   flex: 1 1;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #123455;
-  font-family: "Urbanist", sans-serif;
 }
-.accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac .accordion_accordionIcon__OSBIJ {
+.accordion_accordion__CAPPs .accordion_accordion__header__VI8ji .accordion_accordion__icon__mGatf {
   position: absolute;
-  right: 2.5rem;
-  font-size: 2.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  line-height: 0;
   transition: transform 0.2s, color 0.2s;
-  color: #6f6c90;
-  background-color: #f7f7ff;
-  height: 3.5rem;
-  width: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.8rem;
+  color: #666;
 }
-.accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac .accordion_accordionIcon__OSBIJ.accordion_open__cSJdn {
-  color: #ffffff;
-  background-color: #ff6a00;
-  transform: rotate(180deg);
+.accordion_accordion__CAPPs .accordion_accordion__header__VI8ji.accordion_open__cSJdn .accordion_accordion__icon__mGatf {
+  color: #000;
 }
-.accordion_accordion__CAPPs .accordion_accordionContent__Wxu3a {
+.accordion_accordion__CAPPs .accordion_accordion__content__sZdBT {
   max-height: 0;
   overflow: hidden;
-  padding: 0 15px;
-  background-color: #fff;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-}
-.accordion_accordion__CAPPs .accordion_accordionContent__Wxu3a.accordion_open__cSJdn {
-  max-height: 200px;
-  padding: 2rem;
-  overflow: visible;
-}
-.accordion_accordion__CAPPs .accordion_accordionContent__Wxu3a p {
-  font-size: 1.6rem;
-  text-align: left;
+  transition: max-height 0.5s ease;
+  padding: 0 1em 1em;
+  display: flex;
+  justify-content: space-between; /* This will split content into two halves */
+  padding: 1rem;
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/bannersection/banner.module.scss ***!
@@ -346,11 +340,6 @@
     height: 4rem;
   }
 }
-@media (max-width: 375px) {
-  .anchorBtn_commonBtn__oGmmT {
-    height: 3.5rem;
-  }
-}
 
 .anchorBtn_solidBtn__bWEKm {
   background-color: #ff6a00;
@@ -398,146 +387,28 @@
   height: 100%;
   object-fit: cover;
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/domainSection/domain.module.scss ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.domain_backgroundWrap__7AG2Y {
-  background-color: #FFECDF;
-  border: 0.2rem solid #ff6a00;
-  border-width: 0.1rem;
-  padding: 3.5rem;
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_content__XNrMm p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #707070;
-  text-align: center;
-  margin-top: 1rem;
-  width: 62%;
-  margin: 1rem auto;
-}
-@media (max-width: 767px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_content__XNrMm p {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 991px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_content__XNrMm p {
-    width: 100%;
-  }
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP {
-  background-color: #ffffff;
-  width: 76%;
-  height: 50px;
-  padding: 1rem 0.3rem;
-  border-radius: 5rem;
-  border: 0.2rem solid #ff6a00;
-  border-width: 0.1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP {
-    width: 100%;
-  }
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP input {
-  border: none;
-  flex: 1 1;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #123455;
-  margin-left: 2.5rem;
-}
-@media (max-width: 767px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP input {
-    font-size: 1.6rem;
-  }
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP input:focus {
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z {
-  display: flex;
-  gap: 5rem;
-}
-@media (max-width: 991px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE {
-  border: 0.2rem solid #ff6a00;
-  border-width: 0.1rem;
-  border-radius: 0.5rem;
-  max-width: 104px;
-  min-height: 88px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-@media (max-width: 480px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE {
-    width: 48%;
-  }
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE h6 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #123455;
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE del {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #707070;
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_transferLink__lK4iA p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #707070;
-  text-align: center;
-  margin-top: 1rem;
-}
-@media (max-width: 767px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_transferLink__lK4iA p {
-    font-size: 1.6rem;
-  }
-}
-.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_transferLink__lK4iA p a {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #123455;
-}
-@media (max-width: 767px) {
-  .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_transferLink__lK4iA p a {
-    font-size: 1.6rem;
-  }
-}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/HoistingBannerSection/hoistingBanner.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .hoistingBanner_hoistingSection__AyP4g {
   padding: 4rem 0;
 }
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_hoistingWrap__SqM_0 {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_hoistingWrap__SqM_0 p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
 .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_headingSection__0sXVl {
-  margin: 1rem 0 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ {
   display: grid;
@@ -558,85 +429,40 @@
 .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div4__f8Amv {
   grid-area: 2/4/3/7;
 }
-@media (max-width: 991px) {
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 16px;
-  }
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div1__Hs678 {
-    grid-area: 1/1/2/5;
-  }
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div2__xA_un {
-    grid-area: 2/1/3/5;
-  }
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div3__M55jk {
-    grid-area: 3/1/4/3;
-  }
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div4__f8Amv {
-    grid-area: 3/3/4/5;
-  }
-}
-@media (max-width: 767px) {
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 12px;
-  }
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div1__Hs678,
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div2__xA_un,
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div3__M55jk,
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_div4__f8Amv {
-    grid-area: auto;
-  }
-}
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground1__KtPj7 {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground1__KtPj7 {
   background-color: #FFE7D5;
   border-radius: 1.5rem;
   padding: 2rem 2rem 0 2rem;
   height: 100%;
   position: relative;
 }
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground1__KtPj7 .hoistingBanner_hoistingCards__FtZf_ {
-  height: 100%;
-}
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground1__KtPj7 h3 {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground1__KtPj7 h3 {
   font-size: 2.2rem;
   color: #123455;
   font-weight: 700;
 }
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground1__KtPj7 .hoistingBanner_mobImgWrap__ujUd8 {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground1__KtPj7 .hoistingBanner_mobImgWrap__ujUd8 {
   position: absolute;
   left: 0;
   bottom: 0;
 }
-@media (max-width: 991px) {
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground1__KtPj7 .hoistingBanner_mobImgWrap__ujUd8 {
-    position: unset;
-  }
-}
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground2__05K0_ {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground2__05K0_ {
   background-color: #F4F5FF;
   border-radius: 1.5rem;
   display: flex;
   align-items: center;
   height: 100%;
 }
-@media (max-width: 767px) {
-  .hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground2__05K0_ {
-    flex-direction: column;
-  }
-}
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground2__05K0_ .hoistingBanner_content__5hKub {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground2__05K0_ .hoistingBanner_content__5hKub {
   padding: 2rem;
 }
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground2__05K0_ .hoistingBanner_content__5hKub h3 {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground2__05K0_ .hoistingBanner_content__5hKub h3 {
   font-size: 2.2rem;
   color: #123455;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_cardBackground2__05K0_ .hoistingBanner_content__5hKub p {
+.hoistingBanner_hoistingSection__AyP4g .hoistingBanner_parent__strMQ .hoistingBanner_cardBackground2__05K0_ .hoistingBanner_content__5hKub p {
   font-size: 1.4rem;
   color: #707070;
   margin-top: 2rem;
@@ -706,12 +532,57 @@
   color: #707070;
   margin-top: 1rem;
 }
+
+.hoistingBanner_hoistingCards__FtZf_ {
+  height: 100%;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/freqaskQuestionSection/question.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.question_backgroundWrap__9i51X {
+  padding: 4rem 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .question_backgroundWrap__9i51X {
+    padding: 0 0;
+  }
+}
+.question_backgroundWrap__9i51X .question_backgroundColor__YYYvL {
+  background-color: #F4F5FF;
+  padding: 2rem 0;
+}
+.question_backgroundWrap__9i51X .question_backgroundColor__YYYvL .question_heading__kr4BV {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.question_backgroundWrap__9i51X .question_backgroundColor__YYYvL .question_heading__kr4BV p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/optimizeSesction/optimizePerformance.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .optimizePerformance_optimizeSection__VXeXu {
   background-color: #F4F5FF;
   padding: 4rem 0;
+}
+.optimizePerformance_optimizeSection__VXeXu .optimizePerformance_optimizeWrap__cbQYc {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.optimizePerformance_optimizeSection__VXeXu .optimizePerformance_optimizeWrap__cbQYc p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
 }
 .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_headingSection__uWBfm {
   margin: 1rem 0 3rem;
@@ -726,34 +597,19 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 991px) {
-  .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K {
-    flex-direction: column;
-  }
+.optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_imageContainer__WqvFZ {
+  width: 50%;
 }
 .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_imageContainer__WqvFZ img {
-  border-top-right-radius: 1.1rem;
-  border-bottom-right-radius: 1.1rem;
-  border-top-left-radius: 1.1rem;
-  border-bottom-left-radius: 1.1rem;
+  width: 100%;
 }
 .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4.5rem;
-  gap: 4.5rem;
+  grid-gap: 45px;
+  gap: 45px;
+  width: 50%;
   padding: 4rem;
-}
-@media (max-width: 480px) {
-  .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 {
-    gap: 2.5rem;
-    padding: 2rem;
-  }
-}
-.optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 .optimizePerformance_features__k1ye8 {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 .optimizePerformance_icon__yyZ1b {
   background-color: #ff6a00;
@@ -772,30 +628,10 @@
   font-size: 2rem;
   color: #123455;
 }
-@media (max-width: 480px) {
-  .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 h3 {
-    font-size: 1.8rem;
-  }
-}
 .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #707070;
-  text-align: center;
-  margin-top: 1rem;
-  margin-top: 0;
   font-size: 1.6rem;
-  text-align: left;
-}
-@media (max-width: 767px) {
-  .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 p {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 480px) {
-  .optimizePerformance_optimizeSection__VXeXu .optimizePerformance_backgroundColor__lp9nz .optimizePerformance_wrapContainer__79l7K .optimizePerformance_featuresContainer__3qbb0 p {
-    font-size: 1.5rem;
-  }
+  color: #707070;
+  margin-top: 1rem;
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/organizersection/org.module.scss ***!
@@ -901,35 +737,16 @@
 }
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN {
   background-color: #FFECDF;
-  position: relative;
   border: 0.2rem solid #ff6a00;
   border-width: 0.1rem;
   border-radius: 1.1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  display: flex;
+  gap: 4rem;
   align-items: center;
   padding: 2rem 2rem 0;
 }
-@media (max-width: 1200px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-row-gap: 2.5rem;
-  }
-}
-@media (max-width: 480px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN {
-    grid-template-rows: repeat(1, 1fr);
-    grid-row-gap: 0.5rem;
-  }
-}
-.guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_imageContainer__nPxg6 {
-  position: relative;
-  top: -6rem;
-}
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ {
-  padding: 2rem;
+  width: 48%;
 }
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ h3 {
   text-transform: capitalize;
@@ -938,21 +755,6 @@
   color: #123455;
   text-align: center;
   text-align: unset;
-}
-@media (max-width: 991px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ h3 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 375px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ h3 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 1200px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ h3 {
-    text-align: center;
-  }
 }
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ p {
   font-size: 1.8rem;
@@ -964,42 +766,13 @@
   margin-top: 2rem;
   text-align: unset;
 }
-@media (max-width: 767px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ p {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 1200px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ p {
-    text-align: center;
-  }
-}
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w {
   display: flex;
-  gap: 14rem;
-}
-@media (max-width: 1200px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w {
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-@media (max-width: 767px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w {
-    flex-direction: row;
-    gap: 5rem;
-  }
-}
-@media (max-width: 480px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w {
-    flex-direction: column;
-    gap: 2rem;
-  }
+  gap: 18rem;
 }
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w .guaranteeBanner_profileComp__I5oOn {
   margin-top: 2rem;
   display: flex;
-  align-items: center;
   gap: 1rem;
 }
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w .guaranteeBanner_profileComp__I5oOn .guaranteeBanner_profileContent__AvOTs {
@@ -1015,23 +788,10 @@
   text-align: center;
   font-size: 2rem;
 }
-@media (max-width: 991px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w .guaranteeBanner_profileComp__I5oOn .guaranteeBanner_profileContent__AvOTs .guaranteeBanner_heading__u1eJQ h6 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 375px) {
-  .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w .guaranteeBanner_profileComp__I5oOn .guaranteeBanner_profileContent__AvOTs .guaranteeBanner_heading__u1eJQ h6 {
-    font-size: 2rem;
-  }
-}
 .guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w .guaranteeBanner_profileComp__I5oOn .guaranteeBanner_paragraph__7UfhK p {
   font-size: 1.4rem;
   color: #707070;
   margin-top: 0;
-}
-.guaranteeBanner_backgroundColor__4sgdV .guaranteeBanner_bannerWrapper__Kv_DN .guaranteeBanner_content__JHVPJ .guaranteeBanner_profileContainer__ek34w .guaranteeBanner_guaranteeImg2__td6eO {
-  margin-top: 2rem;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/popularAppsSection/popularApps.module.scss ***!
@@ -1060,16 +820,6 @@
   text-align: center;
   color: #000000;
 }
-@media (max-width: 991px) {
-  .popularApps_backgroundImage__uj_JB .popularApps_heading__McUyT h3 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 375px) {
-  .popularApps_backgroundImage__uj_JB .popularApps_heading__McUyT h3 {
-    font-size: 2rem;
-  }
-}
 .popularApps_backgroundImage__uj_JB .popularApps_heading__McUyT p {
   font-size: 1.8rem;
   font-weight: 400;
@@ -1084,65 +834,39 @@
 .usersFeedback_feedbackWrap__2Njly {
   padding: 4rem 0;
 }
-.usersFeedback_feedbackWrap__2Njly .usersFeedback_title___f21P {
-  margin: 1rem 0 3rem;
+.usersFeedback_feedbackWrap__2Njly .usersFeedback_heading__6wRYX {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
 }
-.usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B {
+.usersFeedback_feedbackWrap__2Njly .usersFeedback_heading__6wRYX p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
+.usersFeedback_feedbackWrap__2Njly .usersFeedback_title___f21P {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.usersFeedback_feedbackWrap__2Njly .usersFeedback_feedbackScroller__jQjW_ {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
-.usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_feedbackMarquee__2F_Cb {
-  display: block;
-}
-@media (max-width: 767px) {
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_feedbackMarquee__2F_Cb {
-    display: none;
-  }
-}
-.usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG {
-  display: none;
-}
-@media (max-width: 767px) {
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG {
-    display: flex;
-    overflow-x: auto;
-    width: 100%;
-    gap: 2rem;
-  }
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG::-webkit-scrollbar {
-    height: 5px;
-  }
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG::-webkit-scrollbar-thumb {
-    background: #ff6a00;
-    border-radius: 4px;
-  }
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-    border-radius: 4px;
-  }
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG .usersFeedback_feedbackContainer__OR5FL {
-    gap: 0.5rem;
-  }
-  .usersFeedback_feedbackWrap__2Njly .usersFeedback_contentWrap__C5j1B .usersFeedback_scrollFeedback__1YPeG .usersFeedback_feedbackContainer__OR5FL .usersFeedback_feedbackCard__hhfc8 {
-    min-width: 380px;
-    max-width: 380px;
-    flex: 0 0 auto;
-  }
-}
 .usersFeedback_feedbackWrap__2Njly .usersFeedback_feedbackContainer__OR5FL {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   gap: 2rem;
 }
 .usersFeedback_feedbackWrap__2Njly .usersFeedback_feedbackContainer__OR5FL .usersFeedback_feedbackCard__hhfc8 {
-  max-width: 500px;
-  flex: 0 0 auto;
+  width: 500px;
   height: auto;
   border-radius: 1.6rem;
-  box-shadow: 0 4px 6px rgba(146, 126, 126, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   margin: 1rem;
   display: flex;
@@ -1179,45 +903,98 @@
   font-family: "Plus Jakarta Sans";
   color: #6b6b78;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/freqaskQuestionSection/question.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.question_backgroundWrap__9i51X {
-  padding: 4rem 0;
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/domainSection/domain.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.domain_backgroundWrap__7AG2Y {
+  background-color: #FFECDF;
+  border: 0.2rem solid #ff6a00;
+  border-width: 0.1rem;
+  padding: 3.5rem;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .question_backgroundWrap__9i51X {
-    padding: 0 0;
-  }
-}
-.question_backgroundWrap__9i51X .question_backgroundColor__YYYvL {
-  background-color: #F4F5FF;
-  padding: 3rem 0;
-}
-.question_backgroundWrap__9i51X .question_backgroundColor__YYYvL .question_heading__kr4BV {
-  margin: 1rem 0 3rem;
-}
-@media (max-width: 767px) {
-  .question_backgroundWrap__9i51X .question_backgroundColor__YYYvL .question_heading__kr4BV {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 375px) {
-  .question_backgroundWrap__9i51X .question_backgroundColor__YYYvL .question_heading__kr4BV {
-    font-size: 2rem;
-  }
-}
-.question_backgroundWrap__9i51X .question_backgroundColor__YYYvL .question_contentWrapper__bVdUx {
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  gap: 2.5rem;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_content__XNrMm p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #707070;
+  text-align: center;
+  margin-top: 1rem;
+  width: 62%;
+  margin: 1rem auto;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP {
+  background-color: #ffffff;
+  width: 76%;
+  height: 50px;
+  padding: 1rem 0.3rem;
+  border-radius: 5rem;
+  border: 0.2rem solid #ff6a00;
+  border-width: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP input {
+  border: none;
+  flex: 1 1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #123455;
+  margin-left: 2.5rem;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z {
+  display: flex;
+  gap: 5rem;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE {
+  border: 0.2rem solid #ff6a00;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE h6 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #123455;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z .domain_priceBox___T6lE del {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #707070;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_transferLink__lK4iA p {
+  font-size: 1.8rem;
+  font-family: 500;
+  color: #707070;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_transferLink__lK4iA p a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #123455;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/tabs/tabButton.module.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .tabButton_tabItem__lWoNb {
+  padding: 10px;
   height: 6.8rem;
   cursor: pointer;
   border-bottom: 2px solid transparent;
@@ -1635,16 +1412,6 @@
   text-align: center;
   font-size: 2.6rem;
   text-align: left;
-}
-@media (max-width: 991px) {
-  .pricingCard_cardItems___ly4z .pricingCard_titleParagraph___s1AC h5 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 375px) {
-  .pricingCard_cardItems___ly4z .pricingCard_titleParagraph___s1AC h5 {
-    font-size: 2rem;
-  }
 }
 .pricingCard_cardItems___ly4z .pricingCard_titleParagraph___s1AC span {
   font-size: 1.6rem;
