@@ -3,8 +3,8 @@ import styles from "../HoistingBannerSection/hoistingBanner.module.scss";
 
 const HoistingCard1 = ({ heading }) => {
   return (
-    <div className={styles.hoistingCards}>
-      <div className={styles.cardBackground1}>
+    <div className={styles.cardBackground1}>
+      <div className={styles.hoistingCards}>
         <h3>{heading}</h3>
         <div className={styles.mobImgWrap}>
           <Image

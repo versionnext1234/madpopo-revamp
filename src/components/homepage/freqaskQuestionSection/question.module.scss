@@ -8,18 +8,21 @@
     background-color: $background-color;
     padding: 3rem 0;
     .heading {
-      @include titleWrap;
-      p {
-        @include titleWrapPara;
+      margin: 1rem 0 3rem;
+      @include x-767-tablet {
+        font-size: 2.5rem;
+      }
+      @include xssm-mobile {
+        font-size: 2rem;
       }
     }
 
     .contentWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
   }
 }

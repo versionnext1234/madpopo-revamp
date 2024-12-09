@@ -4,33 +4,65 @@
 
 .feedbackWrap {
   padding: 4rem 0;
-  .heading {
-    @include titleWrap;
-    p {
-      @include titleWrapPara;
-    }
-  }
   .title {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0 3rem;
   }
-  .feedbackScroller {
+
+  .contentWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    .feedbackMarquee {
+      display: block;
+      @include x-767-tablet {
+        display: none;
+      }
+    }
+    .scrollFeedback {
+      display: none;
+      @include x-767-tablet {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        gap: 2rem;
+        // scrollbar-width: thin;
+
+        &::-webkit-scrollbar {
+          height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $orange-color;
+          border-radius: 4px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #f0f0f0;
+          border-radius: 4px;
+        }
+        .feedbackContainer {
+          gap: 0.5rem;
+          .feedbackCard {
+            min-width: 380px;
+            max-width: 380px;
+            flex: 0 0 auto;
+          }
+        }
+      }
+    }
   }
 
   .feedbackContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    flex-wrap: nowrap;
     gap: 2rem;
     .feedbackCard {
-      //   width: 42%;
-      width: 500px;
+      max-width: 500px;
+      flex: 0 0 auto;
       height: auto;
       border-radius: 1.6rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px rgba(146, 126, 126, 0.1);
       padding: 2rem;
       margin: 1rem;
       display: flex;
@@ -46,12 +78,12 @@
         display: flex;
         justify-content: space-between;
         .profile {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            i {
-                font-size: 3rem;
-            }
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          i {
+            font-size: 3rem;
+          }
         }
         h6 {
           font-size: 1.4rem;

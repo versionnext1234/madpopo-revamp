@@ -1,6 +1,9 @@
 @import "../../../../assets/mixin";
 .commonBtn {
   @include btns;
+  @include xssm-mobile {
+    height: 3.5rem;
+  }
 }
 .solidBtn {
   @include solidBtn;

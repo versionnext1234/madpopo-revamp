@@ -1,5 +1,6 @@
 import Profile from "@/components/common/profile/profile";
 import styles from "../guaranteeBannerSection/guaranteeBanner.module.scss";
+import Image from "next/image";
 
 const GuaranteeBanner = () => {
   return (
@@ -7,11 +8,13 @@ const GuaranteeBanner = () => {
       <div className="container">
         <div className={styles.bannerWrapper}>
           <div className={styles.imageContainer}>
-            <img
-              src="images\guaranteeBanner\guaranteeBannerImg.png"
-              alt="guaranteeBanner"
-              width={500}
-            />
+            <Image
+            src="/images/guaranteeBanner/guaranteeBannerImg.png"
+            alt="guaranteeBanner"
+            width={1300}
+            height={1200}
+            className="img-fluid"
+          />
           </div>
           <div className={styles.content}>
             <h3>30-day money back guarantee</h3>
@@ -33,19 +36,17 @@ const GuaranteeBanner = () => {
                   </div>
                 </div>
               </div>
-              <div>
                 <img
                   src="images\guaranteeBanner\guaranteeImg2.png"
                   alt="guaranteeImg2"
                   width={200}
-                //   className="img-fluid"
-                />
-              </div>
+                  className={styles.guaranteeImg2}
+                /> 
             </div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
   );
 };
 

@@ -12,8 +12,8 @@ const HoistingCard2 = ({ heading, paragraph1, paragraph2 }) => {
       <Image
         src="/images/hoistingBanner/hoistingCard2.svg"
         alt="hoistingCard2"
-        width={1300}
-        height={1200}
+        width={1800}
+        height={1250}
         className="img-fluid"
       />
     </div>

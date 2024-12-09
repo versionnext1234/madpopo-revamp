@@ -9,8 +9,9 @@ const Domain = () => {
       <div className={styles.backgroundWrap}>
         <div className={styles.contentWrap}>
           <div className={styles.content}>
-            {/* <h3>Domain name search – buy a domain in minutes</h3> */}
-            <SectionTitle sectionTitle="Domain name search – buy a domain in minutes"/>
+            <SectionTitle sectionTitle="Domain name search – buy a domain in minutes"
+            className={styles.title}
+            />
             <p>
               It’s easy – simply enter your desired domain name and instantly
               check its availability. Register it before someone else will.

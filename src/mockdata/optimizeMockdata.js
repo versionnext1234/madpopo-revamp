@@ -23,7 +23,7 @@ const featureData = [
         "No more technical hurdles, install WordPress with one click, free.",
     },
     {
-      icon: "fa-thin fa-gear-complex",
+      icon: "fa fa-cog",
       boldText: "Easy-to-use",
       title: "control panel",
       description:
