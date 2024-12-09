@@ -66,12 +66,41 @@ input {
   margin-bottom: 0 !important;
 }
 
+.headingTitle {
+  background-color: #ffe6d4;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+@media (max-width: 375px) {
+  .headingTitle {
+    font-size: 1.2rem;
+  }
+}
+.headingTitle p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff6a00;
+}
+
 .sectionTitle {
   text-transform: capitalize;
   font-size: 3rem;
   font-weight: 700;
   color: #123455;
   text-align: center;
+}
+@media (max-width: 991px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
 }
 
 .commonPara {
@@ -80,6 +109,11 @@ input {
   color: #707070;
   text-align: center;
   margin-top: 1rem;
+}
+@media (max-width: 767px) {
+  .commonPara {
+    font-size: 1.6rem;
+  }
 }
 
 .midClass .slick-container .slick-slider .slick-list .slick-track {
@@ -95,9 +129,6 @@ input {
 .midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide:nth-child(2) a:hover {
   background-color: #df5d00;
   border-color: #df5d00;
-}
-.midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .wordpressExtraDiv {
-  content: "Most Frequently Chosen Packageeeeeeeeeeeee";
 }
 .midClass .slick-container .slick-slider .slick-list .slick-track .slick-slide .wordpressExtraDiv::before {
   content: "";
@@ -358,6 +389,11 @@ input {
   .anchorBtn_commonBtn__oGmmT {
     font-size: 1.5rem;
     height: 4rem;
+  }
+}
+@media (max-width: 375px) {
+  .anchorBtn_commonBtn__oGmmT {
+    height: 3.5rem;
   }
 }
 

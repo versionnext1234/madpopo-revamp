@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap");
 @import "../assets/variables";
 @import "../assets/mixin";
+@import "../assets/media";
 
 * {
   padding: 0;
@@ -67,6 +68,13 @@ input {
   margin-bottom: 0 !important;
 }
 
+.headingTitle {
+  @include titleWrap;
+    p {
+      @include titleWrapPara;
+    }
+}
+
 .sectionTitle {
   @include sectionTitle;
 }
@@ -81,54 +89,44 @@ input {
       .slick-list {
         .slick-track {
           padding-top: 5rem;
-
           .slick-slide {
             &:nth-child(2) {
               h5 {
                 margin-top: 1.5rem;
               }
-
               a {
                 background-color: #ff6a00;
                 color: #fff;
-
                 &:hover {
                   background-color: #df5d00;
                   border-color: #df5d00;
                 }
               }
             }
-
             .wordpressExtraDiv {
-              content: "Most Frequently Chosen Packageeeeeeeeeeeee";
-
               &::before {
                 content: "";
                 @include extraDivWrap;
               }
             }
-
             .linuxExtraDiv {
               &::before {
                 content: "";
                 @include extraDivWrap;
               }
             }
-
             .windowsExtraDiv {
               &::before {
                 content: "";
                 @include extraDivWrap;
               }
             }
-
             .virtualExtraDiv {
               &::before {
                 content: "";
                 @include extraDivWrap;
               }
             }
-
             .businessExtraDiv {
               &::before {
                 content: "";
@@ -141,6 +139,9 @@ input {
     }
   }
 }
+<<<<<<< HEAD
 .rfm-marquee-container{
   gap:2.5rem;
 }
+=======
+>>>>>>> 9ca0f17abcf1cba130ec8b603cabf275e9343d77

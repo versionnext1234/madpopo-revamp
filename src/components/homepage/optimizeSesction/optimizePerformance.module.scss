@@ -6,13 +6,6 @@
   background-color: $background-color;
   padding: 4rem 0;
 
-  .optimizeWrap {
-    @include titleWrap;
-    p {
-      @include titleWrapPara;
-    }
-  }
-
   .headingSection {
     margin: 1rem 0 3rem;
   }
@@ -25,39 +18,59 @@
     .wrapContainer {
       display: flex;
       align-items: center;
+      @include mid-991-tab {
+        flex-direction: column;
+      }
       .imageContainer {
-        width: 50%;
         img {
-          width: 100%;
+          border-top-right-radius: 1.1rem;
+          border-bottom-right-radius: 1.1rem;
+          border-top-left-radius: 1.1rem;
+          border-bottom-left-radius: 1.1rem;
         }
       }
       .featuresContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 45px;
-        width: 50%;
+        gap: 4.5rem;
         padding: 4rem;
+        @include mobile {
+          gap: 2.5rem;
+          padding: 2rem;
+        }
+        .features {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
         .icon {
-            background-color: #ff6a00;
-            width: 36px;
-            border-radius: 10px;
-            height: 36px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i {
-                color: $white-color;
-                font-size: 2rem;
-            }
+          background-color: #ff6a00;
+          width: 36px;
+          border-radius: 10px;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            color: $white-color;
+            font-size: 2rem;
+          }
         }
         h3 {
           font-size: 2rem;
           color: $main-title;
+          @include mobile {
+            font-size: 1.8rem;
+          }
         }
         p {
+          @include paraText;
+          margin-top: 0;
           font-size: 1.6rem;
-          color: $para-text;
-          margin-top: 1rem;
+          text-align: left;
+          @include mobile {
+            font-size: 1.5rem;
+          }
         }
       }
     }

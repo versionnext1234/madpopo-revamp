@@ -1,4 +1,5 @@
 import styles from "../HoistingBannerSection/hoistingBanner.module.scss";
+import Heading from "@/components/common/headingSection/heading";
 import SectionTitle from "@/components/common/sectiontitle/SectionTitle";
 import HoistingCard1 from "./HoistingCard1";
 import HoistingCard2 from "./HoistingCard2";
@@ -9,9 +10,7 @@ const HoistingBanner = () => {
   return (
     <section className={styles.hoistingSection}>
       <div className="container">
-        <div className={styles.hoistingWrap}>
-          <p>Seamless Hosting Experience</p>
-        </div>
+        <Heading heading="Seamless Hosting Experience" />
         <div className={styles.headingSection}>
           <SectionTitle sectionTitle="What You Get with Each Hosting Plan" />
         </div>

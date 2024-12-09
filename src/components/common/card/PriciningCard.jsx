@@ -3,7 +3,7 @@ import { useCurrency } from "@/context/CurrencyContext";
 import AnchorBtn from "../cta/anchorbutton/AnchorBtn";
 import CardCurrency from "./CardCurrency";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "../card/pricingCard.module.scss";
 const PricingCard = ({
   title,
@@ -56,10 +56,26 @@ const PricingCard = ({
       (conversionRates[currency.currency] || 1)
     ).toFixed(2);
   };
+<<<<<<< HEAD
   
+=======
+
+   const wrapperRef = useRef(null);
+
+   const handleToggle = () => {
+     if (wrapperRef.current) {
+       wrapperRef.current.scrollIntoView({
+         behavior: "smooth",
+         block: "start",
+       });
+     }
+     onToggle();
+   };
+
+>>>>>>> 9ca0f17abcf1cba130ec8b603cabf275e9343d77
   return (
     <>
-      <div className={`${styles.cardItems} ${clssName || ""}`}>
+      <div className={`${styles.cardItems} ${clssName || ""}`} ref={wrapperRef}>
         <div className={styles.titleParagraph}>
           <h5>{title || "Starter Boost"}</h5>
           <span>Optimal solution for Beginners</span>
@@ -117,6 +133,7 @@ const PricingCard = ({
         </div>
 
         <div className={styles.wrapper}>
+<<<<<<< HEAD
           <div className={styles.seeBtnWrap} onClick={onToggle}>
             <p>    
               {isOpen ? "See Less Features" : "See More Features"}
@@ -188,6 +205,94 @@ const PricingCard = ({
             </>
           )}
         </div>
+=======
+  {isOpen ? (
+    <>
+      <div className={styles.dataListWrap}>
+        <div className={styles.titleParagraph}>
+          <h5>WordPress Hosting Features</h5>
+        </div>
+        <ul>
+          <li>{managed_wordpress}</li>
+          <li>{daily_backups}</li>
+          <li>{cdn}</li>
+          <li>{dedicated_ip}</li>
+          <li>{priority_support}</li>
+          <li>{one_click_installation}</li>
+          <li>{google_integration}</li>
+          <li>{acceleration}</li>
+          <li>{auto_update}</li>
+          <li>{vulnerability_scanner}</li>
+        </ul>
+        <div className={styles.titleParagraph}>
+          <h5>Hosting Website Builder</h5>
+        </div>
+        <ul>
+          <li>{ai_builder}</li>
+          <li>{drag_and_drop_editor}</li>
+          <li>{transaction_fees}</li>
+          <li>{payment_methods}</li>
+          {ai_features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+        <div className={styles.titleParagraph}>
+          <h5>Security</h5>
+        </div>
+        <ul>
+          <li>{ddos_protection}</li>
+          <li>Domain Privacy: {domain_privacy.free ? "Free" : "Not Free"}</li>
+          <li>
+            Value: {currency.symbol} {convertPrice(domain_privacy.value)}
+          </li>
+          <li>{web_application_firewall}</li>
+          <li>{cloudflare_protected_nameservers}</li>
+          <li>{secure_access_manager}</li>
+        </ul>
+        <div className={styles.titleParagraph}>
+          <h5>Service and Support</h5>
+        </div>
+        <ul>
+          <li>{bandwidth}</li>
+          <li>{uptime_guarantee}</li>
+          <li>{global_data_centers}</li>
+          <li>{customer_support}</li>
+          <li>{money_back_guarantee}</li>
+        </ul>
+      </div>
+      <div className={styles.seeBtnWrap} onClick={handleToggle}>
+        <p>
+          See Less Features
+          <span
+            className={`${styles.arrowIcon} ${styles.rotated}`}
+          >
+            <Image
+              src="/images/card/down-arrow.svg"
+              width={17}
+              height={9}
+              alt="up arrow"
+            />
+          </span>
+        </p>
+      </div>
+    </>
+  ):(
+    <div className={styles.seeBtnWrap} onClick={onToggle}>
+      <p> 
+        See All Features
+        <span className={styles.arrowIcon}>
+          <Image
+            src="/images/card/down-arrow.svg"
+            width={17}
+            height={9}
+            alt="down arrow"
+          />  
+        </span>
+      </p>
+    </div>
+  )}
+</div>
+>>>>>>> 9ca0f17abcf1cba130ec8b603cabf275e9343d77
         <div className="hideDataWrap">
           {/* <h6>Managed WordPress Hosting</h6> */}
         </div>

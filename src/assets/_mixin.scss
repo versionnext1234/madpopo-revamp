@@ -53,6 +53,12 @@
   font-weight: $Bold-700;
   color: $main-title;
   text-align: center;
+  @include mid-991-tab {
+    font-size: 2.5rem;
+  }
+  @include xssm-mobile {
+    font-size: 2rem;
+  }
 }
 
 @mixin paraText {
@@ -61,6 +67,9 @@
   color: $para-text;
   text-align: center;
   margin-top: 1rem;
+  @include x-767-tablet {
+    font-size: 1.6rem;
+  }
 }
 
 @mixin titleWrap {
@@ -69,6 +78,9 @@
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
     margin: auto;
+    @include xssm-mobile {
+      font-size: 1.2rem;
+    }
 }
 
 @mixin titleWrapPara {

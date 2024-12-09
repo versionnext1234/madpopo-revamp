@@ -5,7 +5,8 @@ import Slider from "react-slick";
 
 const CardSlider = ({children}) => {
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,  
