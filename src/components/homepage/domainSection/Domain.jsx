@@ -1,9 +1,13 @@
+"use client";
 import styles from "../domainSection/domain.module.scss";
 import SearchContainer from "./SearchContainer";
 import DomainPrice from "./DomainPrice";
 import SectionTitle from "@/components/common/sectiontitle/SectionTitle";
+import { useState } from "react";
 
 const Domain = () => {
+    const [currency, setCurrency] = useState("");
+
   return (
     <div className="container">
       <div className={styles.backgroundWrap}>
@@ -18,9 +22,9 @@ const Domain = () => {
             </p>
           </div>
 
-          <SearchContainer />
+          <SearchContainer currency={currency} />
 
-          <DomainPrice />
+          <DomainPrice setCurrency={setCurrency}/>
 
           <div className={styles.transferLink}>
             <p>
