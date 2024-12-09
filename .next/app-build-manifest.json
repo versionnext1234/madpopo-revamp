@@ -11,6 +11,12 @@
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
+    ],
+    "/wordpresshosting/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/wordpresshosting/page.css",
+      "static/chunks/app/wordpresshosting/page.js"
     ]
   }
 }

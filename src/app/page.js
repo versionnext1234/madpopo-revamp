@@ -50,7 +50,7 @@ export default function Home() {
       <OptimizeBannerHeading />
       <HoistingBanner />
       <GuaranteeBanner />
-      <PopularApps />
+      <PopularApps/>
       <UsersFeedback />
       <Domain />
       <QuestionSection />

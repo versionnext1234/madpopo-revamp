@@ -1,12 +1,10 @@
 "use client";
-
 import { useCurrency } from "@/context/CurrencyContext";
 import AnchorBtn from "../cta/anchorbutton/AnchorBtn";
 import CardCurrency from "./CardCurrency";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../card/pricingCard.module.scss";
-
 const PricingCard = ({
   title,
   discounted,
@@ -52,13 +50,13 @@ const PricingCard = ({
       Euro: 0.012,
       Dollar: 0.014,
     };
-
+    
     return (
       parseFloat(price.replace(/[^0-9.]/g, "")) *
       (conversionRates[currency.currency] || 1)
     ).toFixed(2);
   };
-
+  
   return (
     <>
       <div className={`${styles.cardItems} ${clssName || ""}`}>
@@ -120,7 +118,7 @@ const PricingCard = ({
 
         <div className={styles.wrapper}>
           <div className={styles.seeBtnWrap} onClick={onToggle}>
-            <p>
+            <p>    
               {isOpen ? "See Less Features" : "See More Features"}
               <span
                 className={`${styles.arrowIcon} ${
@@ -190,7 +188,6 @@ const PricingCard = ({
             </>
           )}
         </div>
-
         <div className="hideDataWrap">
           {/* <h6>Managed WordPress Hosting</h6> */}
         </div>

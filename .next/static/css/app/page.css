@@ -65,6 +65,11 @@
   margin-top: 4rem;
   margin-bottom: 6rem;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner_banerSection__P_VQG {
+    padding: 0 0;
+  }
+}
 @media (max-width: 991px) {
   .banner_banerSection__P_VQG {
     margin-top: 2rem;
@@ -282,6 +287,25 @@
   width: 50%;
   right: 3.5%;
   top: -38px;
+}
+@media (max-width: 480px) {
+  .banner_banerSection__P_VQG .banner_rightBoxx__ImKQZ {
+    position: relative;
+    width: 100%;
+    right: -0.5%;
+    top: 32px;
+  }
+}
+
+.banner_rightBoxximg__cD314 {
+  width: 100%;
+  height: 633px;
+}
+@media (max-width: 1024px) {
+  .banner_rightBoxximg__cD314 {
+    width: 100%;
+    height: auto;
+  }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/common/cta/anchorbutton/anchorBtn.module.scss ***!
@@ -674,6 +698,11 @@
 .org_orgSection__VfS03 {
   padding: 4rem 0;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .org_orgSection__VfS03 {
+    padding: 0 0;
+  }
+}
 .org_orgSection__VfS03 .org_midText__s5rf7 {
   display: flex;
   justify-content: center;
@@ -682,6 +711,16 @@
   font-weight: 500;
   color: #123455;
   line-height: 0;
+}
+@media (max-width: 375px) {
+  .org_orgSection__VfS03 .org_midText__s5rf7 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .org_orgSection__VfS03 .org_midText__s5rf7 {
+    font-size: 16px;
+  }
 }
 .org_orgSection__VfS03 .org_midText__s5rf7 span img {
   margin-right: 0.5rem;
@@ -724,6 +763,16 @@
   line-height: 0;
   display: block;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li a {
+    line-height: 1.4;
+  }
+}
+@media (max-width: 480px) {
+  .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li a {
+    line-height: 28px;
+  }
+}
 .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li a img {
   margin-right: 0.5rem;
 }
@@ -732,6 +781,11 @@
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .plans_planSection__M2seb {
   padding: 4rem 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .plans_planSection__M2seb {
+    padding: 0 0;
+  }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/guaranteeBannerSection/guaranteeBanner.module.scss ***!
@@ -914,6 +968,11 @@
 .question_backgroundWrap__9i51X {
   padding: 4rem 0;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .question_backgroundWrap__9i51X {
+    padding: 0 0;
+  }
+}
 .question_backgroundWrap__9i51X .question_backgroundColor__YYYvL {
   background-color: #F4F5FF;
   padding: 2rem 0;
@@ -998,6 +1057,11 @@
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tabs_tabsContainer__oh_4A {
+    padding: 0 0;
+  }
 }
 
 .tabs_tabHeaders__xNekD {
@@ -1385,6 +1449,11 @@
   font-size: 4rem;
   font-weight: 700;
   color: #123455;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pricingCard_cardItems___ly4z .pricingCard_priciningWrap__bzE0d h6 {
+    font-size: 3rem;
+  }
 }
 .pricingCard_cardItems___ly4z span {
   font-size: 1.2rem;

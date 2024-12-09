@@ -25,7 +25,6 @@ $desk-1600-width: 1600px;
 $desk-large-width: 1920px;
 $l-desktop-width: 2560px;
 
-
 // Queries
 
 @mixin desktop-l {
@@ -138,7 +137,7 @@ $l-desktop-width: 2560px;
   }
 }
 
-@mixin tablet-land {
+@mixin tablet-land{
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
@@ -188,7 +187,7 @@ $l-desktop-width: 2560px;
     @content;
   }
 }
-@mixin x-tablet {
+@mixin x-tablet{
   @media (max-width: #{$tablet-width}) {
     @content;
   }

@@ -1,3 +1,7 @@
+@import "../../../assets/mixin";
+@import "../../../assets/variables";
+@import "../../../assets/media";
+
 .WordpressHostingCardhead {
     font-size: 18px;
     text-align: center;
@@ -6,17 +10,18 @@
 
 .bannersection4Mainheaders {
     width: 300px;
-    height: 60px;
+    height: 47px;
     background-color: #FFE3CF;
     color: #FF6A00;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 11px;
     font-weight: 900;
     margin: 0 auto;
 }
+
 
 .bannersection4Mainheaders2 {
     padding: 20px 20px 2px 20px;
@@ -26,6 +31,9 @@
     border: 1px solid orange;
     border-radius: 10px;
     background-color: #FFECDF;
+    @include tablet-land{
+        display: block;
+    }
 }
 
 .bannersection4Mainheaders2 h2 {
@@ -37,11 +45,14 @@
 }
 
 .managedwordpressbox1 {
-    width: 50%;
-    height: 400px;
+    height: auto;
     background-color: #c75300d7;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .managedwordpressbox2head {
@@ -51,25 +62,48 @@
 }
 
 .managedwordpressbox2para p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 8px 23px;
+
+    @include tablet-land {
+        font-size: 17px;
+    }
 }
 
 .managedwordpressbox2correcticon {
     display: flex;
     gap: 10px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px;
+
+    @include tablet-land {
+        font-size: 17px;
+    }
 }
 
 .managedwordpressbox1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include tablet-land{
+        width:100%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .managedwordpressbox1img {
     padding-top: 10px;
+
+    @include d-desktop {
+        width: 100%;
+    }
+
+    @include tablet-land {
+        height: 600px;
+    }
 }
 
 .bannersection5Mainheaders {
@@ -104,18 +138,38 @@
     font-size: 30px;
     color: #123455;
     font-weight: bold;
+
+    @include tablet-land {
+        font-size: 24px;
+    }
+    @include mobile{
+        text-align:center;
+    }
+
+    @include xssm-mobile {
+        width: 100%;
+        text-align:center;
+    }
 }
 
 .headpara2section6 {
     width: 452px;
     font-size: 18px;
     color: #707070;
+
+    @include tablet-land {
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .headiconparasection6 {
     display: flex;
-    align-items:baseline;
-    padding:6px;
+    align-items: baseline;
+    padding: 6px;
     gap: 10px;
 }
 
@@ -123,4 +177,96 @@
     width: 546px;
     font-size: 18px;
     color: #707070;
+
+    @include d-desktop {
+        width: 100%;
+    }
+}
+
+.headiconbutton1section6 {
+    width: 135px;
+    display: flex;
+    background-color: #FF6A00;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    margin: 10px 4px;
+}
+
+.headiconimage1section6 {
+    width: 50%;
+    height: 382px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    align-items: center;
+
+    @include tablet-land {
+        width:100%;
+        height: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.headiconimage1section6 img {
+    width: 500px;
+
+    @include tablet-land {
+        width:100%;
+        height: 426px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.section5rotatecertificatemain {
+    display: flex;
+}
+
+.section5rotatecertificate {
+    text-align: center;
+    margin: 4px;
+}
+
+.blurleftsideimg {
+    position: relative;
+}
+
+.blurleftsideimgmain {
+    position: absolute;
+    width: 251px;
+    height: 200px;
+    top: -100px;
+    z-index: 11;
+    left: 2px;
+    @include mobile {
+        position: absolute;
+        width: 183px;
+        height: 93px;
+        top: 4px;
+    }
+}
+
+.blurleftsideimgmainright {
+    position: absolute;
+    width: 251px;
+    height: 200px;
+    top: -100px;
+    z-index: 11;
+    right: 2px;
+    @include mobile{
+        position:absolute;
+        width:183px;
+        height:93px;
+        top: 4px;
+    }
 }
