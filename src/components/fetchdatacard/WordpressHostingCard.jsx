@@ -6,6 +6,7 @@ import { useState } from "react";
 const WordpressHostingCard = () => {
   const hostingPlans = mockData.WordPressHosting;
   const [isAllOpen, setIsAllOpen] = useState(false);
+  
   const handleToggleAll = () => {
     setIsAllOpen((prevState) => !prevState);
   };
