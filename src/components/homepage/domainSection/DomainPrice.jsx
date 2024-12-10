@@ -1,18 +1,14 @@
 import styles from "../domainSection/domain.module.scss";
 import domainPriceData from "@/mockdata/domainPriceMockdata";
 
-const DomainPrice = ({ setCurrency }) => {
-  const handleCurrencyClick = (currency) => {
-    setCurrency(currency);
-  };
-
+const DomainPrice = ({ handleDomainClick }) => {
   return (
     <div className={styles.priceWrap}>
       {domainPriceData.map((item, index) => (
         <div
           key={index}
           className={styles.priceBox}
-          onClick={() => handleCurrencyClick(item.currency)}
+          onClick={() => handleDomainClick(item.currency)}
         >
           <h6>{item.currency}</h6>
           <h6>{item.price}</h6>

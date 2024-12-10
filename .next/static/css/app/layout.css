@@ -434,26 +434,11 @@ input {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
-  .CommonFooter_footerGrid__q7Fbn {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .CommonFooter_footerGrid__q7Fbn {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 .CommonFooter_footerItem__jUhph {
   color: white;
   padding: 30px;
   border-radius: 4px;
-}
-@media (max-width: 480px) {
-  .CommonFooter_footerItem__jUhph {
-    padding: 30px 30px 0px 30px;
-  }
 }
 
 .CommonFooter_footerItem__jUhph p a {
@@ -473,35 +458,10 @@ input {
   border-radius: 20px;
   margin: 30px;
 }
-@media (max-width: 480px) {
-  .CommonFooter_footerItemm__GM3KP {
-    width: 96%;
-    height: 279px;
-    background-color: rgba(128, 128, 128, 0.719);
-    border-radius: 9px;
-    margin: 0px -26px 2px 1px;
-  }
-}
-@media (max-width: 375px) {
-  .CommonFooter_footerItemm__GM3KP {
-    height: 276px;
-    margin: 14px 7px 7px 2px;
-  }
-}
-@media (max-width: 320px) {
-  .CommonFooter_footerItemm__GM3KP {
-    margin: 14px 7px 7px -7px;
-  }
-}
 
 .CommonFooter_footerItemm__GM3KP h2 {
   color: white;
   margin: 16px;
-}
-@media (max-width: 320px) {
-  .CommonFooter_footerItemm__GM3KP h2 {
-    margin: 10px 3px 3px 3px;
-  }
 }
 
 .CommonFooter_doyouneed_support__Kk08T {
@@ -512,12 +472,6 @@ input {
   color: white;
   font-size: 17px;
 }
-@media (max-width: 480px) {
-  .CommonFooter_doyouneed_support__Kk08T {
-    padding: 11px 11px 11px 12px;
-    font-size: 13px;
-  }
-}
 
 .CommonFooter_doyouneed_contact__yBn_e {
   display: flex;
@@ -526,18 +480,6 @@ input {
   padding: 0px 2px 10px 32px;
   color: white;
   font-size: 17px;
-}
-@media (max-width: 480px) {
-  .CommonFooter_doyouneed_contact__yBn_e {
-    padding: 0px 2px 10px 22px;
-    color: white;
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  .CommonFooter_doyouneed_contact__yBn_e {
-    padding: 0px 2px 10px 10px;
-  }
 }
 
 .CommonFooter_doyouneed_support_parrent___dGI5 {
@@ -551,12 +493,6 @@ input {
   align-items: center;
   color: #ff6a00;
 }
-@media (max-width: 480px) {
-  .CommonFooter_doyouneed_support_parrent___dGI5 {
-    width: 33px;
-    height: 33px;
-  }
-}
 
 .CommonFooter_doyouneed_contact_parrent__osSqt {
   width: 40px;
@@ -568,25 +504,12 @@ input {
   justify-content: center;
   color: #ff6a00;
 }
-@media (max-width: 320px) {
-  .CommonFooter_doyouneed_contact_parrent__osSqt {
-    width: 33px;
-    height: 33px;
-  }
-}
 
 .CommonFooter_doyouneed_para__XBvbh {
   color: white;
   width: 80%;
   font-size: 12px;
   padding: 15px 0px 0px 29px;
-}
-@media (max-width: 375px) {
-  .CommonFooter_doyouneed_para__XBvbh {
-    width: 97%;
-    font-size: 13px;
-    padding: 3px 0px 0px 29px;
-  }
 }
 
 .CommonFooter_doyouneedexpert__GBdxV {
@@ -602,12 +525,6 @@ input {
   font-size: 18px;
   color: white;
 }
-@media (max-width: 480px) {
-  .CommonFooter_doyouneedexpert__GBdxV p {
-    text-align: center;
-    font-size: 16px;
-  }
-}
 
 .CommonFooter_footerGrid2__wLerx {
   display: grid;
@@ -617,25 +534,10 @@ input {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 480px) {
-  .CommonFooter_footerGrid2__wLerx {
-    display: contents;
-  }
-}
 
 .CommonFooter_footerGrid2__wLerx img {
   width: 70px;
   height: 30px;
-}
-@media (max-width: 375px) {
-  .CommonFooter_footerGrid2__wLerx img {
-    width: 58px;
-  }
-}
-@media (max-width: 320px) {
-  .CommonFooter_footerGrid2__wLerx img {
-    width: 47px;
-  }
 }
 
 .CommonFooter_footerGrid2_parent__3w24S {
@@ -644,17 +546,10 @@ input {
   align-items: center;
   gap: 7px;
 }
-@media (max-width: 480px) {
-  .CommonFooter_footerGrid2_parent__3w24S {
-    margin: 10px;
-  }
-}
 
 .CommonFooter_doyouneedSocialmedia_main__ybRzj {
-  margin: 10px;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  gap: 7px;
 }
 
 .CommonFooter_doyouneedSocialmedia___MIUR {
@@ -676,11 +571,6 @@ input {
   justify-content: space-between;
   font-size: 20px;
   color: white;
-}
-@media (max-width: 480px) {
-  .CommonFooter_allrightsfooter__FQ5xu {
-    font-size: 12px;
-  }
 }
 
 .CommonFooter_footerItemunorderlistt__99SiR li {

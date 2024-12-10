@@ -1,7 +1,7 @@
 import React from 'react'
 import Paragraph from "@/components/common/paragraph/Paragraph";
 import SectionTitle from "@/components/common/sectiontitle/SectionTitle";
-import Tabs from "@/components/wordpresshosting/bannersection/tabs";
+import WordpresshoistingTabs from "@/components/wordpresshosting/bannersection/WordpresshoistingTabs";
 import styles from "../../homepage/planstabs/plans.module.scss";
 
 const bannersection3 = () => {
@@ -11,7 +11,7 @@ const bannersection3 = () => {
       <div className="container">
         <SectionTitle sectionTitle="Wordpress Plan That Fits You Best" />
         <Paragraph paragraph="Get started risk-free with our 30-day money-back guarantee." />
-        <Tabs/>
+        <WordpresshoistingTabs />
       </div>
     </section>
      </>

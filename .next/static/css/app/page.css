@@ -505,6 +505,33 @@
   border: none;
   box-shadow: none;
 }
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP .domain_dropdownWrap__cyPQI {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP .domain_dropdownWrap__cyPQI .domain_customSelect__JjSNl {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #161242;
+  font-weight: 700;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP .domain_dropdownWrap__cyPQI .domain_customSelect__JjSNl:focus {
+  outline: none;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP .domain_dropdownWrap__cyPQI span .domain_arrowIcon___ynvB {
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_searchContainer__Tn5AP .domain_dropdownWrap__cyPQI span .domain_rotated__zaCX4 {
+  transform: translateY(-50%) rotate(180deg);
+}
 .domain_backgroundWrap__7AG2Y .domain_contentWrap__nCVGB .domain_priceWrap__P9A9Z {
   display: flex;
   gap: 5rem;
@@ -873,6 +900,12 @@
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 768px) {
+  .org_orgSection__VfS03 .org_excelenceWrap__C854b ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li {
   font-size: 2rem;
   color: #262626;
@@ -881,6 +914,11 @@
 .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li:nth-child(2) {
   border-left: 0.2rem solid #ccc;
   border-right: 0.2rem solid #ccc;
+}
+@media (max-width: 768px) {
+  .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li:nth-child(2) {
+    border: none;
+  }
 }
 .org_orgSection__VfS03 .org_excelenceWrap__C854b ul li span.org_boldTextSpan__dF0nw {
   font-weight: 700;
@@ -1247,6 +1285,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/tabs/tabButton.module.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .tabButton_tabItem__lWoNb {
+  padding: 5px;
   height: 6.8rem;
   cursor: pointer;
   border-bottom: 2px solid transparent;
@@ -1320,6 +1359,21 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(90deg, rgba(255, 230, 212, 0.14) 0%, rgb(252, 243, 231) 51%, rgba(255, 230, 212, 0.14) 100%);
+}
+
+@media (max-width: 991px) {
+  .tabs_tabHeaders__xNekD {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    scrollbar-color: #ff6a00 #f5f5f5;
+    scrollbar-width: thin;
+  }
+  .tabs_tabHeaders__xNekD::-webkit-scrollbar {
+    height: 4px !important;
+  }
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
