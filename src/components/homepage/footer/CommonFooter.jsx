@@ -99,7 +99,7 @@ const CommonFooter = () => {
 
                 <section className={classNames(styles.footerGrid2, 'container')}>
                     <div className={styles.footerGrid2_parent}>
-                        <div><img src="images/bank/card1.png" alt="Payment Card 1" /></div>
+                        <div><img  src="images/bank/card1.png" alt="Payment Card 1" /></div>
                         <div><img src="images/bank/card2.png" alt="Payment Card 2" /></div>
                         <div><img src="images/bank/card3.png" alt="Payment Card 3" /></div>
                         <div><img src="images/bank/card4.png" alt="Payment Card 4" /></div>

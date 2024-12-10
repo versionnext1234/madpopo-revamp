@@ -54,6 +54,9 @@
       font-size: 4rem;
       font-weight: $Bold-700;
       color: $main-title;
+      @include tablet-land{
+        font-size:3rem;
+      }
     }
   }
 

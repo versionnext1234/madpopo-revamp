@@ -1,6 +1,6 @@
 // @import "../../assets/mixin";
 // @import "../../assets/variables";
-// @import "../../assets/media";
+@import "../../../assets/media";
 
 // *****************Footer************
 .homeFooter {
@@ -13,12 +13,24 @@
     grid-template-columns: repeat(6, 1fr);
     max-width: 1200px;
     margin: 0 auto;
+
+    @include x-tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .footerItem {
     color: white;
     padding: 30px;
     border-radius: 4px;
+
+    @include mobile {
+        padding: 30px 30px 0px 30px;
+    }
 }
 
 .footerItem p a {
@@ -38,11 +50,29 @@
     background-color: rgba(128, 128, 128, 0.719);
     border-radius: 20px;
     margin: 30px;
+
+    @include mobile {
+        width: 96%;
+        height: 279px;
+        background-color: rgba(128, 128, 128, 0.719);
+        border-radius: 9px;
+        margin: 0px -26px 2px 1px;
+    }
+    @include xssm-mobile{
+        height: 276px;
+        margin: 14px 7px 7px 2px;
+    }
+    @include xss-mobile{
+        margin: 14px 7px 7px -7px;
+    }
 }
 
 .footerItemm h2 {
     color: white;
     margin: 16px;
+    @include xss-mobile{
+        margin:10px 3px 3px 3px ;
+    }
 }
 
 .doyouneed_support {
@@ -52,6 +82,11 @@
     padding: 20px;
     color: white;
     font-size: 17px;
+
+    @include mobile {
+        padding: 11px 11px 11px 12px;
+        font-size: 13px;
+    }
 }
 
 .doyouneed_contact {
@@ -61,8 +96,16 @@
     padding: 0px 2px 10px 32px;
     color: white;
     font-size: 17px;
-}
 
+    @include mobile {
+        padding: 0px 2px 10px 22px;
+        color: white;
+        font-size: 14px;
+    }
+    @include xssm-mobile{
+        padding: 0px 2px 10px 10px;
+    }
+}
 .doyouneed_support_parrent {
     width: 40px;
     text-align: center;
@@ -73,7 +116,10 @@
     border-radius: 50%;
     align-items: center;
     color: #ff6a00;
-    ;
+    @include mobile{
+        width:33px;
+        height:33px;
+    }
 }
 
 .doyouneed_contact_parrent {
@@ -85,7 +131,10 @@
     align-items: center;
     justify-content: center;
     color: #ff6a00;
-    ;
+    @include xss-mobile{
+        width:33px;
+        height:33px;
+    }
 }
 
 .doyouneed_para {
@@ -93,6 +142,11 @@
     width: 80%;
     font-size: 12px;
     padding: 15px 0px 0px 29px;
+    @include xssm-mobile{
+        width: 97%;
+        font-size: 13px;
+        padding: 3px 0px 0px 29px;
+    }
 }
 
 .doyouneedexpert {
@@ -108,6 +162,10 @@
 .doyouneedexpert p {
     font-size: 18px;
     color: white;
+    @include mobile{
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 .footerGrid2 {
@@ -117,11 +175,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+        display: contents;
+    }
+  
 }
 
 .footerGrid2 img {
     width: 70px;
     height: 30px;
+    @include xssm-mobile{
+        width: 58px;
+    }
+    @include xss-mobile{
+        width:47px;
+    }
 }
 
 .footerGrid2_parent {
@@ -129,11 +198,18 @@
     justify-content: space-between;
     align-items: center;
     gap: 7px;
+
+    @include mobile {
+        margin: 10px;
+    }
 }
 
 .doyouneedSocialmedia_main {
+    margin: 10px;
     display: flex;
-    gap: 7px;
+    justify-content: center;
+    gap: 15px;
+
 }
 
 .doyouneedSocialmedia {
@@ -150,21 +226,25 @@
     cursor: pointer;
 }
 
-.allrightsfooter{
-    display:flex;
-    justify-content:space-between;
-    font-size:20px;
+.allrightsfooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
     color: white;
+
+    @include mobile {
+        font-size: 12px;
+    }
 }
-.footerItemunorderlistt li{
-    font-size:17px;
+
+.footerItemunorderlistt li {
+    font-size: 17px;
 }
-.footerItemunorderlistt a{
+
+.footerItemunorderlistt a {
     color: gray;
 }
-.doyouneedSocialmedia a{
-    color:#ff6a00;
+
+.doyouneedSocialmedia a {
+    color: #ff6a00;
 }
-
-
-

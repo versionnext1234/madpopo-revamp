@@ -12,6 +12,12 @@
     font-weight: $Medium-500;
     color: $main-title;
     line-height: 0;
+    @include xssm-mobile{
+      font-size:20px;
+    }
+    @include xss-mobile{
+      font-size:16px;
+    }
     span {
       img {
         margin-right: 0.5rem;
@@ -53,6 +59,12 @@
         a {
           color: $sub-title;
           line-height: 0;
+          @include tablet-land{
+            line-height:1.4;
+          }
+          @include mobile{
+            line-height:28px;
+          }
           display: block;
           img {
             margin-right: 0.5rem;

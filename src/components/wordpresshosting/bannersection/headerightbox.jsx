@@ -6,11 +6,10 @@ const headerightbox = () => {
     return (
         <>
             <div className={styles.rightBoxx}>
-                <Image
+                <img
+                    className={styles.rightBoxximg}
                     src="/images/banner/wordpressshosting.png"
                     alt="Banner Madpopo"
-                    width={755}
-                    height={633}
                 />
             </div>
         </>

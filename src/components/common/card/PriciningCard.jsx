@@ -1,12 +1,10 @@
 "use client";
-
 import { useCurrency } from "@/context/CurrencyContext";
 import AnchorBtn from "../cta/anchorbutton/AnchorBtn";
 import CardCurrency from "./CardCurrency";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import styles from "../card/pricingCard.module.scss";
-
 const PricingCard = ({
   title,
   discounted,
@@ -52,7 +50,7 @@ const PricingCard = ({
       Euro: 0.012,
       Dollar: 0.014,
     };
-
+    
     return (
       parseFloat(price.replace(/[^0-9.]/g, "")) *
       (conversionRates[currency.currency] || 1)
