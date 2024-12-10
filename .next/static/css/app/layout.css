@@ -332,7 +332,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 #header_headerSection___XMRI .header_navbarexpandlg__TvhI_ .header_rightWrap__OUWNA .header_phnNumWrap__3uGAN a {
   font-size: 2rem;

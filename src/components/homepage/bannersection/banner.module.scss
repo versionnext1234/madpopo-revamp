@@ -4,7 +4,6 @@
 
 .banerSection {
   position: relative;
-  @include paddingY;
   margin-top: 4rem;
   margin-bottom: 6rem;
 
@@ -226,10 +225,33 @@
 
 .rightBoxximg {
   width:100%;
-  height: 633px;
+  height:570px;
 
   @include d-desktop {
     width: 100%;
     height: auto;
+  }
+}
+
+.listWrap ul li span img {
+  animation: heartbeat 1.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
   }
 }

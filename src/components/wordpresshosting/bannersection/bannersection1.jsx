@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../../homepage/bannersection/banner.module.scss";
-import LeftBox from "../../homepage/bannersection/LeftBox";
+import LeftBox from "./leftBox";
 import RightBox from "../../wordpresshosting/bannersection/headerightbox";
 
 const bannersection1 = () => {

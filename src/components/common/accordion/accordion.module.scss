@@ -115,6 +115,7 @@
     position: relative;
     padding: 2.5rem;
     color: #666;
+
     span {
       flex: 1;
       font-size: 2rem;
@@ -136,6 +137,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 0.8rem;
+
       &.open {
         color: $white-color;
         background-color: $orange-color;
@@ -156,9 +158,32 @@
       padding: 2rem;
       overflow: visible;
     }
+
     p {
       font-size: 1.6rem;
       text-align: left;
     }
   }
+}
+
+.viewMoreBtn {
+  width:16.8rem;
+  height: 5rem;
+  // display: block;
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 0;
+  background-color:#ff6a00 !important;
+  color:white;
+  border: 0.2rem solid #ff6a00 !important;
+}
+
+.viewMoreBtn:hover{
+  background-color:white !important;
+  color: #ff6a00;
 }

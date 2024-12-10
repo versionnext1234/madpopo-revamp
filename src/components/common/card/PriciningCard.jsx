@@ -5,6 +5,7 @@ import CardCurrency from "./CardCurrency";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import styles from "../card/pricingCard.module.scss";
+
 const PricingCard = ({
   title,
   discounted,
@@ -50,29 +51,25 @@ const PricingCard = ({
       Euro: 0.012,
       Dollar: 0.014,
     };
-    
+
     return (
       parseFloat(price.replace(/[^0-9.]/g, "")) *
       (conversionRates[currency.currency] || 1)
     ).toFixed(2);
   };
-<<<<<<< HEAD
-  
-=======
 
-   const wrapperRef = useRef(null);
+  const wrapperRef = useRef(null);
 
-   const handleToggle = () => {
-     if (wrapperRef.current) {
-       wrapperRef.current.scrollIntoView({
-         behavior: "smooth",
-         block: "start",
-       });
-     }
-     onToggle();
-   };
+  const handleToggle = () => {
+    if (wrapperRef.current) {
+      wrapperRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    onToggle();
+  };
 
->>>>>>> 9ca0f17abcf1cba130ec8b603cabf275e9343d77
   return (
     <>
       <div className={`${styles.cardItems} ${clssName || ""}`} ref={wrapperRef}>
@@ -107,192 +104,553 @@ const PricingCard = ({
 
         <div className={styles.dataListWrap}>
           <ul>
-            <li className="visibleItem">{websites}</li>
-            <li className="visibleItem">{visits}</li>
-            <li className="visibleItem">{storage}</li>
             <li className="visibleItem">
-              200 000 files and directories (inodes)
+              <div className={styles.listItemWrapper}>
+                <Image
+                  src="/images/banner/correctsign.png"
+                  alt="Websites icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                {websites}
+              </div>
             </li>
             <li className="visibleItem">
-              Free domain {currency.symbol} {convertPrice(renewal_price)}
+              <div className={styles.listItemWrapper}>
+                <Image
+                   src="/images/banner/correctsign.png"
+                  alt="Visits icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                {visits}
+              </div>
             </li>
-            <li className="visibleItem">Free pre-built templates</li>
-            <li className="visibleItem">Free automatic website migration</li>
-            <li className="visibleItem">Unlimited free SSL</li>
-            <li className="visibleItem">1 email account</li>
-            <li className="visibleItem">Weekly backups</li>
-            <li className="visibleItem">WordPress vulnerabilities scanner</li>
-            <li className="visibleItem">WordPress auto updates</li>
-            <li className="visibleItem">Standard WordPress acceleration</li>
-            <li className="visibleItem">Unlimited bandwidth</li>
-            <li className="visibleItem">Free CDN</li>
-            <li className="disableItem">WordPress staging tool</li>
-            <li className="disableItem">Dedicated IP address</li>
-            <li className="disableItem">Priority support</li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Storage icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                {storage}
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Inodes icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                200 000 files and directories (inodes)
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                   src="/images/banner/correctsign.png"
+                  alt="Domain icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Free domain {currency.symbol} {convertPrice(renewal_price)}
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                   src="/images/banner/correctsign.png"
+                  alt="Templates icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Free pre-built templates
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Migration icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Free automatic website migration
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="SSL icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Unlimited free SSL
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Email icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                1 email account
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Backup icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Weekly backups
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Vulnerabilities icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                WordPress vulnerabilities scanner
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Auto update icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                WordPress auto updates
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Acceleration icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Standard WordPress acceleration
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Bandwidth icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Unlimited bandwidth
+              </div>
+            </li>
+            <li className="visibleItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="CDN icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Free CDN
+              </div>
+            </li>
+            <li className="disableItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Staging tool icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                WordPress staging tool
+              </div>
+            </li>
+            <li className="disableItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Dedicated IP icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Dedicated IP address
+              </div>
+            </li>
+            <li className="disableItem">
+              <div className={styles.listItemWrapper}>
+                <Image
+                    src="/images/banner/correctsign.png"
+                  alt="Priority support icon"
+                  width={20}
+                  height={20}
+                  className={styles.listItemImage}
+                />
+                Priority support
+              </div>
+            </li>
           </ul>
         </div>
 
+        {/*************************************************/}
+
         <div className={styles.wrapper}>
-<<<<<<< HEAD
-          <div className={styles.seeBtnWrap} onClick={onToggle}>
-            <p>    
-              {isOpen ? "See Less Features" : "See More Features"}
-              <span
-                className={`${styles.arrowIcon} ${
-                  isOpen ? styles.rotated : ""
-                }`}
-              >
-                <Image
-                  src="../images/card/down-arrow.svg"
-                  width={17}
-                  height={9}
-                  alt="down arrow"
-                />
-              </span>
-            </p>
-          </div>
-          {isOpen && (
+          {isOpen ? (
             <>
               <div className={styles.dataListWrap}>
+                {/* WordPress Hosting Features Section */}
                 <div className={styles.titleParagraph}>
                   <h5>WordPress Hosting Features</h5>
                 </div>
                 <ul>
-                  <li>{managed_wordpress}</li>
-                  <li>{daily_backups}</li>
-                  <li>{cdn}</li>
-                  <li>{dedicated_ip}</li>
-                  <li>{priority_support}</li>
-                  <li>{one_click_installation}</li>
-                  <li>{google_integration}</li>
-                  <li>{acceleration}</li>
-                  <li>{auto_update}</li>
-                  <li>{vulnerability_scanner}</li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Managed WordPress"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {managed_wordpress}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                       src="/images/banner/correctsign.png"
+                      alt="Daily Backups"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {daily_backups}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="CDN"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {cdn}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Dedicated IP"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {dedicated_ip}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Priority Support"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {priority_support}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="One Click Installation"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {one_click_installation}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Google Integration"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {google_integration}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Acceleration"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {acceleration}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Auto Update"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {auto_update}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Vulnerability Scanner"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {vulnerability_scanner}
+                  </li>
                 </ul>
+
+                {/* Hosting Website Builder Section */}
                 <div className={styles.titleParagraph}>
-                  <h5>Hoisting Website Builder</h5>
+                  <h5>Hosting Website Builder</h5>
                 </div>
                 <ul>
-                  <li>{ai_builder}</li>
-                  <li>{drag_and_drop_editor}</li>
-                  <li>{transaction_fees}</li>
-                  <li>{payment_methods}</li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="AI Builder"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {ai_builder}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Drag and Drop Editor"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {drag_and_drop_editor}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Transaction Fees"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {transaction_fees}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Payment Methods"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {payment_methods}
+                  </li>
                   {ai_features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li key={index} className={styles.flexItem}>
+                      <Image
+                          src="/images/banner/correctsign.png"
+                        alt={`AI Feature ${index}`}
+                        width={20}
+                        height={20}
+                        className={styles.listItemImage}
+                      />
+                      {feature}
+                    </li>
                   ))}
                 </ul>
+
+                {/* Security Section */}
                 <div className={styles.titleParagraph}>
                   <h5>Security</h5>
                 </div>
                 <ul>
-                  <li>{ddos_protection}</li>
-                  <li>Domain Privacy: {domain_privacy.free ? "Free" : "Not Free"}</li>
-                  <li>Value: {currency.symbol} {convertPrice(domain_privacy.value)}</li>
-                  <li>{web_application_firewall}</li>
-                  <li>{cloudflare_protected_nameservers}</li>
-                  <li>{secure_access_manager}</li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="DDoS Protection"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {ddos_protection}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Domain Privacy"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    Domain Privacy: {domain_privacy.free ? "Free" : "Not Free"}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Domain Privacy Value"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    Value: {currency.symbol} {convertPrice(domain_privacy.value)}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Web Application Firewall"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {web_application_firewall}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Cloudflare Protected Nameservers"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {cloudflare_protected_nameservers}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Secure Access Manager"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {secure_access_manager}
+                  </li>
                 </ul>
+
+                {/* Service and Support Section */}
                 <div className={styles.titleParagraph}>
                   <h5>Service and Support</h5>
-                </div><ul>
-                  <li>{bandwidth}</li>
-                  <li>{uptime_guarantee}</li>
-                  <li>{global_data_centers}</li>
-                  <li>{customer_support}</li>
-                  <li>{money_back_guarantee}</li>
+                </div>
+                <ul>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Bandwidth"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {bandwidth}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Uptime Guarantee"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {uptime_guarantee}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Global Data Centers"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {global_data_centers}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                        src="/images/banner/correctsign.png"
+                      alt="Customer Support"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {customer_support}
+                  </li>
+                  <li className={styles.flexItem}>
+                    <Image
+                       src="/images/banner/correctsign.png"
+                      alt="Money Back Guarantee"
+                      width={20}
+                      height={20}
+                      className={styles.listItemImage}
+                    />
+                    {money_back_guarantee}
+                  </li>
                 </ul>
               </div>
+              <div className={styles.seeBtnWrap} onClick={handleToggle}>
+                <p>
+                  See Less Features
+                  <span
+                    className={`${styles.arrowIcon} ${styles.rotated}`}
+                  >
+                    <Image
+                      src="/images/card/down-arrow.svg"
+                      width={17}
+                      height={9}
+                      alt="up arrow"
+                    />
+                  </span>
+                </p>
+              </div>
             </>
+          ) : (
+            <div className={styles.seeBtnWrap} onClick={onToggle}>
+              <p>
+                See All Features
+                <span className={styles.arrowIcon}>
+                  <Image
+                    src="/images/card/down-arrow.svg"
+                    width={17}
+                    height={9}
+                    alt="down arrow"
+                  />
+                </span>
+              </p>
+            </div>
           )}
         </div>
-=======
-  {isOpen ? (
-    <>
-      <div className={styles.dataListWrap}>
-        <div className={styles.titleParagraph}>
-          <h5>WordPress Hosting Features</h5>
-        </div>
-        <ul>
-          <li>{managed_wordpress}</li>
-          <li>{daily_backups}</li>
-          <li>{cdn}</li>
-          <li>{dedicated_ip}</li>
-          <li>{priority_support}</li>
-          <li>{one_click_installation}</li>
-          <li>{google_integration}</li>
-          <li>{acceleration}</li>
-          <li>{auto_update}</li>
-          <li>{vulnerability_scanner}</li>
-        </ul>
-        <div className={styles.titleParagraph}>
-          <h5>Hosting Website Builder</h5>
-        </div>
-        <ul>
-          <li>{ai_builder}</li>
-          <li>{drag_and_drop_editor}</li>
-          <li>{transaction_fees}</li>
-          <li>{payment_methods}</li>
-          {ai_features.map((feature, index) => (
-            <li key={index}>{feature}</li>
-          ))}
-        </ul>
-        <div className={styles.titleParagraph}>
-          <h5>Security</h5>
-        </div>
-        <ul>
-          <li>{ddos_protection}</li>
-          <li>Domain Privacy: {domain_privacy.free ? "Free" : "Not Free"}</li>
-          <li>
-            Value: {currency.symbol} {convertPrice(domain_privacy.value)}
-          </li>
-          <li>{web_application_firewall}</li>
-          <li>{cloudflare_protected_nameservers}</li>
-          <li>{secure_access_manager}</li>
-        </ul>
-        <div className={styles.titleParagraph}>
-          <h5>Service and Support</h5>
-        </div>
-        <ul>
-          <li>{bandwidth}</li>
-          <li>{uptime_guarantee}</li>
-          <li>{global_data_centers}</li>
-          <li>{customer_support}</li>
-          <li>{money_back_guarantee}</li>
-        </ul>
-      </div>
-      <div className={styles.seeBtnWrap} onClick={handleToggle}>
-        <p>
-          See Less Features
-          <span
-            className={`${styles.arrowIcon} ${styles.rotated}`}
-          >
-            <Image
-              src="/images/card/down-arrow.svg"
-              width={17}
-              height={9}
-              alt="up arrow"
-            />
-          </span>
-        </p>
-      </div>
-    </>
-  ):(
-    <div className={styles.seeBtnWrap} onClick={onToggle}>
-      <p> 
-        See All Features
-        <span className={styles.arrowIcon}>
-          <Image
-            src="/images/card/down-arrow.svg"
-            width={17}
-            height={9}
-            alt="down arrow"
-          />  
-        </span>
-      </p>
-    </div>
-  )}
-</div>
->>>>>>> 9ca0f17abcf1cba130ec8b603cabf275e9343d77
         <div className="hideDataWrap">
           {/* <h6>Managed WordPress Hosting</h6> */}
         </div>

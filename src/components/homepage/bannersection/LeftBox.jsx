@@ -1,13 +1,16 @@
 import AnchorBtn from "@/components/common/cta/anchorbutton/AnchorBtn";
 import styles from "../bannersection/banner.module.scss";
 import BannerCurrency from "./BannerCurrency";
+
 const LeftBox = () => {
+  
   return (
     <div className={styles.leftBox}>
       <div className={styles.offerTag}>
         <span>Up to 82% off hosting</span>
       </div>
       <h1>Fast, Secure, and Reliable Web Hosting</h1>
+
       <div className={styles.listWrap}>
         <ul>
           <li>
@@ -30,7 +33,7 @@ const LeftBox = () => {
                 height={20}
               />
             </span>
-            Free Domain and SSL
+                Free Domain and SSL
           </li>
         </ul>
         <ul>
@@ -85,7 +88,7 @@ const LeftBox = () => {
           buttonText="Contact Sales"
           anchorLink="#"
           icon=""
-          btnWidth="14.4rem"
+          btnWidth="16.8rem"
         />
       </div>
     </div>

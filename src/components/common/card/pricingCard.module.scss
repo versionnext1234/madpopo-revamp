@@ -2,7 +2,7 @@
 @import "../../../assets/variables";
 
 .cardItems {
-  line-height: 4rem;
+  line-height:3.3rem;
   @include commonBorder;
   padding: 1.5rem;
   margin-left: 1rem;
@@ -15,6 +15,7 @@
       @include sectionTitle;
       font-size: 2.6rem;
       text-align: left;
+      padding: 12px 0px !important;
     }
     span {
       font-size: 1.6rem;
@@ -71,6 +72,7 @@
     font-size: 1.5rem;
     font-weight: $Medium-500;
     color: $main-title;
+    
   }
 
   .seeBtnWrap {
@@ -94,3 +96,28 @@
     }
   }
 }
+
+.listItemWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;  
+}
+
+.listItemImage {
+  display: block;  
+}
+
+// *********
+.flexItem {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.listItemImage {
+  display: block;
+  width: 20px;
+  height: 20px; 
+}
+
+

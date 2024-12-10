@@ -12,14 +12,14 @@ import React from 'react'
 const page = () => {
     return (
         <>
-            <BannerSection/>
-            <BannerSection2/>
-           <BannerSection3/> 
-            <BannerSection4/>
-              <BannerSection5/>
+            <BannerSection />
+            <BannerSection2 />
+            <BannerSection3 />
+            <BannerSection4 />
+            <BannerSection5 />
             <BannerSection6 />
-             {/* <Domain/> */}
-            <QuestionSection/>  
+            <Domain />
+            <QuestionSection />
         </>
     )
 }

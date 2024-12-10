@@ -17,6 +17,17 @@
       "static/chunks/main-app.js",
       "static/css/app/wordpresshosting/page.css",
       "static/chunks/app/wordpresshosting/page.js"
+    ],
+    "/wooCommerce/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/wooCommerce/page.css",
+      "static/chunks/app/wooCommerce/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

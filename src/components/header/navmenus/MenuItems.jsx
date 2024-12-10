@@ -27,7 +27,7 @@ const MenuItems = () => {
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" href="/app-development">
+              <Link className="dropdown-item" href="/wooCommerce">
                 App Development
               </Link>
             </li>

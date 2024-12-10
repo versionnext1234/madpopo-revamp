@@ -3,17 +3,26 @@ import { useState } from "react";
 import styles from "../accordion/accordion.module.scss";
 import accordionData from "@/mockdata/accordionMockdata";
 
+
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [visibleItems, setVisibleItems] = useState(4); 
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const showMoreItems = () => {
+   
+    setVisibleItems((prevItems) => prevItems + 4);
+  };
+
+  const shouldShowMoreButton = visibleItems < accordionData.length;
+
   return (
     <div className={`container`}>
       <div className={`row`}>
-        {accordionData.map((item, index) => (
+        {accordionData.slice(0, visibleItems).map((item, index) => (
           <div className="col-md-6 mb-3" key={item.id}>
             <div
               className={`${styles.accordion} ${
@@ -44,6 +53,18 @@ const Accordion = () => {
           </div>
         ))}
       </div>
+
+
+      {shouldShowMoreButton && (
+        <div className="text-center mt-3">
+          <button
+            className={styles.viewMoreBtn} 
+            onClick={showMoreItems}
+          >
+            View More Reviews
+          </button>
+        </div>
+      )}
     </div>
   );
 };

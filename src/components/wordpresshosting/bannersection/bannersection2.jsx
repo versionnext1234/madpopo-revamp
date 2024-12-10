@@ -16,8 +16,8 @@ const bannersection2 = () => {
                                 height={20}
                             />
                         </span>
-                        Organizer of{" "}
-                        <span className={styles.boldText}> WordCamp Asia 2024</span>
+                        specially {" "}
+                        <span className={styles.boldText}>  Organized For WordPress</span>
                     </h3>
                     <div className={styles.excelenceWrap}>
                         <ul>

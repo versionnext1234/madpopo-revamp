@@ -34,7 +34,7 @@ const bannersection5 = () => {
                     <p>Features Included in All WordPress Hosting Plans</p>
                 </div>
                 {/* main rotate left to right  */}
-                <div className={`container ${styles.blurleftsideimg}`}>
+                <div className={`${styles.blurleftsideimg}`}>
                     <img
                         className={styles.blurleftsideimgmain}
                         src="images\banner\whiteblur.png" alt="" />                    
