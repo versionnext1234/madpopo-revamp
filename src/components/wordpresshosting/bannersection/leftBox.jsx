@@ -9,7 +9,9 @@ const LeftBox = () => {
       <div className={styles.offerTag}>
         <span>Up to 82% off hosting</span>
       </div>
-      <h1 style={{fontSize:"5rem"}}>Fast, Secure & Reliable WordPress Hosting</h1>
+      <h1 
+      className={styles.fastWordPress}
+       >Fast, Secure & Reliable WordPress Hosting</h1>
 
       <div className={styles.listWrap}>
         <ul>

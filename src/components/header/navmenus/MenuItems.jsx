@@ -9,57 +9,71 @@ const MenuItems = () => {
       id="navbarNav"
     >
       <ul className={`navbar-nav ${styles.navbarNav}`}>
+        {/* WordPress Dropdown */}
         <li className={`${styles.navItem} nav-item dropdown`}>
           <a
             className={`${styles.navLink} nav-link dropdown-toggle`}
             href="#"
-            id="navbarDropdown"
+            id="navbarDropdownWordPress"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             WordPress
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-              <Link className="dropdown-item" href="/wordpresshosting">
-                Web Development
-              </Link>
-            </li>
-            <li>
-              <Link className="dropdown-item" href="/wooCommerce">
-                App Development
-              </Link>
-            </li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <Link className="dropdown-item" href="/digital-marketing">
-                Digital Marketing
-              </Link>
-            </li>
-          </ul>
+        
+            <ul
+              className={`dropdown-menu ${styles.dropdownmenuuu}`}
+              aria-labelledby="navbarDropdownWordPress"
+            >
+              <li>
+                <Link href="/wordpresshosting" className="dropdown-item">
+                  Web Development
+                  <br />
+                </Link>
+              </li>
+              <li>
+                <Link href="/wooCommerce" className="dropdown-item">
+                  App Development
+                </Link>
+              </li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
+              <li>
+                <Link href="/linuxhosting" className="dropdown-item">
+                  Linux Hosting
+                </Link>
+              </li>
+              <li>
+                <Link href="/cloudeServer" className="dropdown-item">
+                  Cloud Server
+                </Link>
+              </li>
+            </ul>
         </li>
+    
+    
+        {/* Hosting Dropdown */}
         <li className={`${styles.navItem} nav-item dropdown`}>
           <a
             className={`${styles.navLink} nav-link dropdown-toggle`}
             href="#"
-            id="navbarDropdown"
+            id="navbarDropdownHosting"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Hosting
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdownHosting">
             <li>
-              <Link className="dropdown-item" href="/web-development">
+              <Link href="/web-development" className="dropdown-item">
                 Web Development
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" href="/app-development">
+              <Link href="/app-development" className="dropdown-item">
                 App Development
               </Link>
             </li>
@@ -67,31 +81,33 @@ const MenuItems = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link className="dropdown-item" href="/digital-marketing">
+              <Link href="/digital-marketing" className="dropdown-item">
                 Digital Marketing
               </Link>
             </li>
           </ul>
         </li>
+
+        {/* Domains Dropdown */}
         <li className={`${styles.navItem} nav-item dropdown`}>
           <a
             className={`${styles.navLink} nav-link dropdown-toggle`}
             href="#"
-            id="navbarDropdown"
+            id="navbarDropdownDomains"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Domains
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdownDomains">
             <li>
-              <Link className="dropdown-item" href="/web-development">
+              <Link href="/web-development" className="dropdown-item">
                 Web Development
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" href="/app-development">
+              <Link href="/app-development" className="dropdown-item">
                 App Development
               </Link>
             </li>
@@ -99,31 +115,33 @@ const MenuItems = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link className="dropdown-item" href="/digital-marketing">
+              <Link href="/digital-marketing" className="dropdown-item">
                 Digital Marketing
               </Link>
             </li>
           </ul>
         </li>
+
+        {/* About Us Dropdown */}
         <li className={`${styles.navItem} nav-item dropdown`}>
           <a
             className={`${styles.navLink} nav-link dropdown-toggle`}
             href="#"
-            id="navbarDropdown"
+            id="navbarDropdownAboutUs"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             About Us
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdownAboutUs">
             <li>
-              <Link className="dropdown-item" href="/web-development">
+              <Link href="/web-development" className="dropdown-item">
                 Web Development
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" href="/app-development">
+              <Link href="/app-development" className="dropdown-item">
                 App Development
               </Link>
             </li>
@@ -131,7 +149,7 @@ const MenuItems = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link className="dropdown-item" href="/digital-marketing">
+              <Link href="/digital-marketing" className="dropdown-item">
                 Digital Marketing
               </Link>
             </li>

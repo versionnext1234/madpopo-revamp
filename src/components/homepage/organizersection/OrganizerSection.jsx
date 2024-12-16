@@ -5,7 +5,9 @@ import Link from "next/link";
 const OrganizerSection = () => {
   return (
     <section className={styles.orgSection}>
-      <div className="container">
+      <div className="container"
+      style={{marginTop:"45px"}}
+      >
         <h3 className={styles.midText}>
           <span className={styles.wpImgWrap}>
             <img

@@ -6,21 +6,22 @@ import React from "react";
 const RightBoxWrap = () => {
   return (
     <div className={styles.rightWrap}>
-    
+
       <div className={styles.phnNumWrap}>
         <Link href="tel:+91 7039 003 001">+91 7039 003 001</Link>
         <span>(24x7 Sales)</span>
       </div>
 
-      <AnchorBtn
-        btnStyle="transparentBtn"
-        buttonText="login"
-        anchorLink="#"
-        icon="fa fa-user-o"
-        btnWidth="11rem"
-      />
+      <div>
+        <AnchorBtn
+          btnStyle="transparentBtn"
+          buttonText="login"
+          anchorLink="#"
+          icon="fa fa-user-o"
+          btnWidth="11rem"
+        />
+      </div>
     </div>
   );
 };
-
 export default RightBoxWrap;

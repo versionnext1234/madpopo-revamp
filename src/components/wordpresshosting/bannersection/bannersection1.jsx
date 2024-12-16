@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from "../../homepage/bannersection/banner.module.scss";
 import LeftBox from "./leftBox";
-import RightBox from "../../wordpresshosting/bannersection/headerightbox";
+import LinuxRight from '@/components/linuxhosting/linuxRight';
+import styles from '../../../components/homepage/bannersection/banner.module.scss';
 
 const bannersection1 = () => {
     return (
@@ -12,11 +12,11 @@ const bannersection1 = () => {
                         <div className="col-xl-6 col-lg-8 col-md-12 col-12">
                             <LeftBox/>
                         </div>
-                        <RightBox />
+                        <LinuxRight />
                     </div>
                 </div>
             </section>
         </>
     )
 }
-export default bannersection1
+export default bannersection1;

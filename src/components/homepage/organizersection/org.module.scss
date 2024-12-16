@@ -3,7 +3,7 @@
 @import "../../../assets/variables";
 
 .orgSection {
-  
+    @include paddingY;
   .midText {
     display: flex;
     justify-content: center;

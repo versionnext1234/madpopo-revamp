@@ -74,42 +74,47 @@ const CommonFooter = () => {
                             <div className={styles.doyouneed_support_parrent}>
                                 <i className="fa-regular fa-envelope"></i>
                             </div>
-                            <div><a 
-                            style={{color:"white"}}
-                            href="mailto:mail@madpopo.com" title="Email MadPopo">mail@madpopo.com</a></div>
+                            <div><a
+                                style={{ color: "white" }}
+                                href="mailto:mail@madpopo.com" title="Email MadPopo">mail@madpopo.com</a></div>
                         </div>
                         <div className={styles.doyouneed_contact}>
                             <div className={styles.doyouneed_contact_parrent}>
                                 <i className="fa-solid fa-square-phone"></i>
                             </div>
-                            <div><a 
-                             style={{color:"white"}}
-                            href="tel:+917039003001" title="Call MadPopo">+91 7039003001</a></div>
+                            <div><a
+                                style={{ color: "white" }}
+                                href="tel:+917039003001" title="Call MadPopo">+91 7039003001</a></div>
                         </div>
                         <div className={styles.doyouneed_para}>
                             <p>Working on a big project? Let our experts help you out.</p>
                         </div>
                         <div className={styles.doyouneedexpert}>
-                            <p><a 
-                             style={{color:"white"}}
-                            href="/talk-to-expert" title="Talk to an Expert">Talk to an expert</a></p>
+                            <p><a
+                                style={{ color: "white" }}
+                                href="/talk-to-expert" title="Talk to an Expert">Talk to an expert
+                               <span className={styles.footerplayiconspan}><i className={`${styles.footerplayicon} fa-solid fa-play`}></i>
+                               </span> 
+                            </a>
+                            </p>
+
                         </div>
                     </article>
                 </section>
 
                 <section className={classNames(styles.footerGrid2, 'container')}>
                     <div className={styles.footerGrid2_parent}>
-                        <div><img  src="images/bank/card1.png" alt="Payment Card 1" /></div>
+                        <div><img src="images/bank/card1.png" alt="Payment Card 1" /></div>
                         <div><img src="images/bank/card2.png" alt="Payment Card 2" /></div>
                         <div><img src="images/bank/card3.png" alt="Payment Card 3" /></div>
                         <div><img src="images/bank/card4.png" alt="Payment Card 4" /></div>
                         <div><img src="images/bank/card5.png" alt="Payment Card 5" /></div>
-                        <div style={{color:'#ff6a00'}}>and more...</div>
+                        <div style={{ color: '#ff6a00' }}>and more...</div>
                     </div>
                     <div className={styles.doyouneedSocialmedia_main}>
                         <div className={styles.doyouneedSocialmedia}>
-                            <a 
-                            href="https://www.linkedin.com" title="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
+                            <a
+                                href="https://www.linkedin.com" title="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                         <div className={styles.doyouneedSocialmedia}>
                             <a href="https://www.instagram.com" title="Instagram"><i className="fa-brands fa-square-instagram"></i></a>

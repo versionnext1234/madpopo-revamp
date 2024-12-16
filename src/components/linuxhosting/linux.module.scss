@@ -1,0 +1,109 @@
+@import "../../assets/mixin";
+@import "../../assets/variables";
+@import "../../assets/media";
+
+.rightBox {
+    position: absolute;
+    width: 55%;
+    right: 5.5%;
+    top: 0;
+
+    @include d-desktop {
+        width: 58%;
+        right: 2%;
+    }
+
+    @include mid-991-tab {
+        width: 65%;
+    }
+
+    @include x-767-tablet {
+        display: none;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+        width: auto;
+    }
+}
+
+.rightBoxx {
+    position: absolute;
+    width: 50%;
+    right: 0.5%;
+    top: -38px;
+
+    @include mobile {
+        position: relative;
+        width: 100%;
+        right: -0.5%;
+        top: 32px;
+    }
+}
+
+.rightBoxximg {
+    width: 90%;
+    height: 658px;
+
+    @include xu-desktop{
+        height:598px;
+    }
+
+    @include d-desktop {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.linuxheadiconimage1section6 {
+    width:44%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 26px;
+    align-items: center;
+    background-color: #ffecdf;
+
+    @include d-desktop{
+        width:100%;
+    }
+
+    @include tablet-land {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.linuxheadiconimage1section6 img {
+    width:400px;
+
+    @include d-desktop{
+        width:100%;
+    }
+
+    @include tablet-land {
+        width:100%;
+        height: 426px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
+.linuxSection4{
+    display: flex;
+    justify-content: space-between;
+    @include tablet-land{
+        display: block;
+    }
+    @include mobile{
+        display: block;
+    }
+}

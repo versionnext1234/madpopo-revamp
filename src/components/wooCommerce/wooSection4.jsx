@@ -17,10 +17,10 @@ const wooSection4 = () => {
                 <div className="container"
                     style={{ marginTop: "20px" }}
                 >
-                    <div className={`row ${styles.managedwordpressboxmain}`}
+                    <div className={`${styles.managedwordpressboxmain}`}
                   
                     >
-                        <div className={`col-xl-6 col-md-12 ${styles.managedwordpressbox1}`}
+                        <div className={`col-xl-6 ${styles.managedwordpressbox1}`}
                         
                         >
                             <img src='images\banner\wooimg.png' alt="advanced photo"
@@ -28,7 +28,7 @@ const wooSection4 = () => {
                                 width={470} />
                         </div>
 
-                        <div className={`col-xl-6 col-md-12 ${styles.managedwordpressbox2}`}
+                        <div className={`col-xl-6 ${styles.managedwordpressbox2}`}
                           style={{ marginTop: "40px"}}
                         
                         >

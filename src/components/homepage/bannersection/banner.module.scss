@@ -69,6 +69,21 @@
       }
     }
 
+    h2{
+      color: $main-title;
+      font-weight: $Bold-700;
+      font-size:5.3rem;
+      line-height: 1.2; 
+      @include tablet-land{
+        width:50%;
+        font-size:3.3rem;
+      }
+      @include mobile{
+        text-align: center;
+        font-size: 4.3rem;
+      }
+    }
+
     .listWrap {
       display: flex;
       gap: 5rem;
@@ -253,5 +268,11 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+.fastWordPress{
+  font-size:5rem;
+  @include tablet-land{
+    font-size:3.7rem;
   }
 }

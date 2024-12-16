@@ -5,8 +5,8 @@ const Bannersection6 = () => {
     return (
         <>
             <div className='container' style={{marginTop:"50px", marginBottom:"50px"}}>
-                <div className='row'>
-                    <div className='col-md-12 col-xl-6'>
+                <div className={styles.managedwordpressboxmainSeamless}>
+                    <div className='col-xl-6'>
                         <p className={styles.headparasection6}>Seamless WordPress Website Migration at No Cost</p>
                         <p className={styles.headpara2section6}>"Hosting your WordPress site elsewhere? Let us handle the migration for you."</p>
                         <div className={styles.headiconparasection6}>
@@ -39,7 +39,8 @@ const Bannersection6 = () => {
                             Migrate Now
                         </div>
                     </div>
-                    <div className={`col-md-12 col-xl-6 ${styles.headiconimage1section6}`}>
+
+                    <div className={`col-xl-6 ${styles.headiconimage1section6}`}>
                         <img src="images\banner\migratewesite.png" alt="migratewesite"/>
                     </div>
                 </div>

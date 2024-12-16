@@ -47,7 +47,7 @@
 .footerItemm {
     width: 268px;
     height: 297px;
-    background-color: rgba(128, 128, 128, 0.719);
+    background-color: #3A3E4B;
     border-radius: 20px;
     margin: 30px;
 
@@ -59,7 +59,7 @@
         margin: 0px -26px 2px 1px;
     }
     @include xssm-mobile{
-        height: 276px;
+        height: 255px;
         margin: 14px 7px 7px 2px;
     }
     @include xss-mobile{
@@ -70,6 +70,9 @@
 .footerItemm h2 {
     color: white;
     margin: 16px;
+    @include xssm-mobile{
+        margin: 13px 7px 7px 7px;
+    }
     @include xss-mobile{
         margin:10px 3px 3px 3px ;
     }
@@ -103,7 +106,7 @@
         font-size: 14px;
     }
     @include xssm-mobile{
-        padding: 0px 2px 10px 10px;
+        padding: 0px 2px 0px 10px;
     }
 }
 .doyouneed_support_parrent {
@@ -131,21 +134,24 @@
     align-items: center;
     justify-content: center;
     color: #ff6a00;
+    @include mobile{
+        width:33px;
+        height:33px; 
+    }
     @include xss-mobile{
         width:33px;
         height:33px;
     }
 }
 
-.doyouneed_para {
-    color: white;
+.doyouneed_para{
+    color:#B6B6B6;
     width: 80%;
-    font-size: 12px;
-    padding: 15px 0px 0px 29px;
+    font-size:15px;
+    margin:15px 0px 0px 29px;
+
     @include xssm-mobile{
-        width: 97%;
         font-size: 13px;
-        padding: 3px 0px 0px 29px;
     }
 }
 
@@ -154,17 +160,19 @@
     height: 38px;
     border-radius: 20px;
     background-color: #ff6a00;
-    ;
     margin: 10px 10px 10px 25px;
-    padding: 6px;
+    padding: 6px 6px 6px 11px;
+     font-weight:500;
 }
 
 .doyouneedexpert p {
-    font-size: 18px;
+    font-size:17px;
     color: white;
     @include mobile{
-        text-align: center;
         font-size: 16px;
+    }
+    @include xss-mobile{
+        font-size:15px;
     }
 }
 
@@ -247,4 +255,13 @@
 
 .doyouneedSocialmedia a {
     color: #ff6a00;
+}
+.footerplayicon{
+    padding-left:38px;
+}
+
+.footerplayiconspan{
+    @include mobile{
+        display:none;
+    } 
 }

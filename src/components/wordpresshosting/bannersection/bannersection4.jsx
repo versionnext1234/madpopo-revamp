@@ -16,14 +16,14 @@ const BannerSection4 = () => {
                 {/* Managed WordPress Hosting */}
                 <div className="container"
                 style={{marginTop:"20px"}}
-                >
-                    <div className={`row ${styles.managedwordpressboxmain}`}>
-                        <div className={`col-xl-6 col-md-12 ${styles.managedwordpressbox1}`}>
+                >  
+                    <div className={`${styles.managedwordpressboxmain}`}>
+                        <div className={`col-xl-6 ${styles.managedwordpressbox1}`}>
                          <img src='images\banner\advanced.png' alt="advanced photo"
                          className={styles.managedwordpressbox1img}
                          width={470}/>
-                        </div>
-                        <div className={`col-xl-6 col-md-12 ${styles.managedwordpressbox2}`}>
+                        </div>  
+                        <div className={`col-xl-6 ${styles.managedwordpressbox2}`}>
                             <h2 className={styles.managedwordpressbox2head}>Managed WordPress Hosting</h2>
                             <div className={styles.managedwordpressbox2para}>
                                 <p>Our managed WordPress hosting plans cater to WordPress users' needs, providing user-friendly features such as Popo Panel, a 1-click installer,

@@ -169,6 +169,24 @@
     font-size: 2.8rem;
   }
 }
+.banner_banerSection__P_VQG .banner_leftBox__OTDFL h2 {
+  color: #123455;
+  font-weight: 700;
+  font-size: 5.3rem;
+  line-height: 1.2;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner_banerSection__P_VQG .banner_leftBox__OTDFL h2 {
+    width: 50%;
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .banner_banerSection__P_VQG .banner_leftBox__OTDFL h2 {
+    text-align: center;
+    font-size: 4.3rem;
+  }
+}
 .banner_banerSection__P_VQG .banner_leftBox__OTDFL .banner_listWrap__vqhQC {
   display: flex;
   gap: 5rem;
@@ -360,6 +378,14 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+.banner_fastWordPress__NQSAR {
+  font-size: 5rem;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner_fastWordPress__NQSAR {
+    font-size: 3.7rem;
   }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -864,6 +890,9 @@
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/organizersection/org.module.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.org_orgSection__VfS03 {
+  padding-top: 5rem;
+}
 .org_orgSection__VfS03 .org_midText__s5rf7 {
   display: flex;
   justify-content: center;
@@ -952,12 +981,8 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/planstabs/plans.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .plans_planSection__M2seb {
-  padding: 4rem 0;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .plans_planSection__M2seb {
-    padding: 0 0;
-  }
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/guaranteeBannerSection/guaranteeBanner.module.scss ***!
@@ -1250,12 +1275,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/freqaskQuestionSection/question.module.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .question_backgroundWrap__9i51X {
-  padding: 4rem 0;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .question_backgroundWrap__9i51X {
-    padding: 0 0;
-  }
+  padding-top: 5rem;
 }
 .question_backgroundWrap__9i51X .question_backgroundColor__YYYvL {
   background-color: #F4F5FF;
@@ -1347,12 +1367,7 @@
 .tabs_tabsContainer__oh_4A {
   display: flex;
   flex-direction: column;
-  padding: 4rem 0;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabs_tabsContainer__oh_4A {
-    padding: 0 0;
-  }
+  padding-top: 5rem;
 }
 
 .tabs_tabHeaders__xNekD {
@@ -1716,7 +1731,7 @@
   font-weight: 700;
   color: #123455;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   text-align: left;
   padding: 12px 0px !important;
 }
