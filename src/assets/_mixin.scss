@@ -3,9 +3,9 @@
 
 @mixin paddingY {
   padding: 4rem 0;
-  @include tablet-land{
-    padding: 0 0;
-  }
+  // @include tablet-land{
+  //   padding: 0 0;
+  // }
 }
 
 @mixin commonBorder {

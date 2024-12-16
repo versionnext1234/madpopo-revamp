@@ -1,7 +1,7 @@
 import React from 'react'
 import Paragraph from "@/components/common/paragraph/Paragraph";
 import SectionTitle from "@/components/common/sectiontitle/SectionTitle";
-import Tabs from "@/components/wordpresshosting/bannersection/tabs";
+import Tabs from '../tabs/Tabs';
 import styles from "../homepage/planstabs/plans.module.scss";
 
 const wooSection3 = () => {

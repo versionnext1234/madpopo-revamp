@@ -8,6 +8,7 @@ import Bannersection6 from '../../components/wordpresshosting/bannersection/bann
 
 import Domain from '@/components/homepage/domainSection/Domain'
 import QuestionSection from '@/components/homepage/freqaskQuestionSection/QuestionSection'
+import { wooCommerceData } from '@/mockdata/accordionMockdata';
 
 const page = () => {
   return (
@@ -19,7 +20,7 @@ const page = () => {
        <Bannersection5/>
        <Bannersection6/>
        <Domain/>
-       <QuestionSection/>  
+       <QuestionSection data={wooCommerceData}/>  
      </>
   )
 }

@@ -26,10 +26,10 @@
     white-space: nowrap;
     justify-content: flex-start;
     padding: 0 1rem;
-    scrollbar-color: $orange-color #f5f5f5;
+    scrollbar-color: $orange-color #f5f5f5; 
     scrollbar-width: thin;
   }
   .tabHeaders::-webkit-scrollbar {
-    height: 4px!important;
+    height: 4px !important;
   }
 }

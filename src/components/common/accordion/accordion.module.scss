@@ -2,101 +2,6 @@
 @import "../../../assets/mixin";
 @import "../../../assets/variables";
 
-// .accordions {
-//   width: 100%;
-//   margin: 0 auto;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-column-gap: 2rem;
-//   grid-row-gap: 2rem;
-//   //   grid-auto-rows: minmax(50px, auto); // Ensures grid items adapt independently
-//   @include x-767-tablet {
-//     display: block;
-//   }
-//   .accordion {
-//     margin-bottom: 1rem;
-//     overflow: hidden;
-//     transition: border-color 0.5s ease;
-//     background-color: #ffffff;
-//     border-radius: 1.6rem;
-//     min-height: 50px;
-//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-//     .accordionHeader {
-//       cursor: pointer;
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-//       position: relative;
-//       padding: 2.5rem;
-//       color: #666;
-//       @include x-767-tablet {
-//         padding: 1.5rem;
-//       }
-//       @include xssm-mobile {
-//         font-size: 1.5rem;
-//       }
-//       span {
-//         flex: 1;
-//         font-size: 2rem;
-//         font-weight: $SemiBold-600;
-//         color: $main-title;
-//         font-family: $font-family-base;
-//         @include x-767-tablet {
-//           font-size: 1.8rem;
-//         }
-//         @include xssm-mobile {
-//             font-size: 1.5rem;
-//           }
-//       }
-//       .accordionIcon {
-//         position: absolute;
-//         right: 2.5rem;
-//         font-size: 2.5rem;
-//         transition: transform 0.2s, color 0.2s;
-//         color: #6f6c90;
-//         background-color: #f7f7ff;
-//         height: 3.5rem;
-//         width: 3rem;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         border-radius: 0.8rem;
-//         @include xssm-mobile{
-//             font-size: 2rem;
-//             width: 2.5rem;
-//             height: 3rem;
-//           }
-//         &.open {
-//           color: $white-color;
-//           background-color: $orange-color;
-//           transform: rotate(180deg);
-//         }
-//       }
-//     }
-
-//     .accordionContent {
-//       max-height: 0;
-//       overflow: hidden;
-//       padding: 0;
-//       transition: max-height 0.5s ease, padding 0.5s ease;
-//       &.open {
-//         max-height: 1000px;
-//         padding: 2rem;
-//         overflow: visible;
-//       }
-//       p {
-//         @include paraText;
-//         font-size: 1.6rem;
-//         text-align: left;
-//         @include xssm-mobile {
-//             font-size: 1.4rem;
-//             }
-//       }
-//     }
-//   }
-// }
-
 .accordion {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -109,19 +14,21 @@
 
   .accordionHeader {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     cursor: pointer;
     position: relative;
-    padding: 2.5rem;
+    padding: 2rem;
     color: #666;
-
+    width: 100%;
     span {
       flex: 1;
       font-size: 2rem;
       font-weight: $SemiBold-600;
       color: $main-title;
       font-family: $font-family-base;
+      white-space: normal;
+      margin-right: 3rem;
     }
 
     .accordionIcon {
@@ -137,7 +44,6 @@
       align-items: center;
       justify-content: center;
       border-radius: 0.8rem;
-
       &.open {
         color: $white-color;
         background-color: $orange-color;
@@ -152,22 +58,22 @@
     padding: 0 15px;
     background-color: #fff;
     transition: max-height 0.5s ease, padding 0.5s ease;
-
     &.open {
-      max-height: 200px;
-      padding: 2rem;
+      max-height: 2000px;
+      padding: 1rem 2rem;
       overflow: visible;
     }
-
     p {
       font-size: 1.6rem;
       text-align: left;
+      color: $para-text;
+      margin-top: 1rem;
     }
   }
 }
 
 .viewMoreBtn {
-  width:16.8rem;
+  width: 16.8rem;
   height: 5rem;
   // display: block;
   // display: flex;
@@ -178,12 +84,12 @@
   font-weight: 600;
   text-transform: capitalize;
   line-height: 0;
-  background-color:#ff6a00 !important;
-  color:white;
+  background-color: #ff6a00 !important;
+  color: white;
   border: 0.2rem solid #ff6a00 !important;
 }
 
-.viewMoreBtn:hover{
-  background-color:white !important;
+.viewMoreBtn:hover {
+  background-color: white !important;
   color: #ff6a00;
 }

@@ -1,28 +1,35 @@
 "use client";
 import { useState } from "react";
 import styles from "../accordion/accordion.module.scss";
-import accordionData from "@/mockdata/accordionMockdata";
+import { homepageMockdata } from "@/mockdata/accordionMockdata";
+import { useRef } from "react";
 
-
-const Accordion = () => {
+const Accordion = ({ data = homepageMockdata }) => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [visibleItems, setVisibleItems] = useState(4); 
+  const [visibleItems, setVisibleItems] = useState(4);
+  const questionRef = useRef(null);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const showMoreItems = () => {
-   
-    setVisibleItems((prevItems) => prevItems + 4);
+  const toggleItemsVisibility = () => {
+    if (visibleItems < data.length) {
+      setVisibleItems((prevItems) => prevItems + 4);
+    } else {
+      setVisibleItems(4);
+      if (questionRef.current) {
+        questionRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
-  const shouldShowMoreButton = visibleItems < accordionData.length;
+  const isShowingAll = visibleItems >= data.length;
 
   return (
     <div className={`container`}>
-      <div className={`row`}>
-        {accordionData.slice(0, visibleItems).map((item, index) => (
+      <div className={`row`} ref={questionRef}>
+        {data.slice(0, visibleItems).map((item, index) => (
           <div className="col-md-6 mb-3" key={item.id}>
             <div
               className={`${styles.accordion} ${
@@ -34,13 +41,13 @@ const Accordion = () => {
                 onClick={() => toggleAccordion(index)}
               >
                 <span>{item.question}</span>
-                <span
+                <div
                   className={`${styles.accordionIcon} ${
                     openIndex === index ? styles.open : ""
                   }`}
                 >
                   {openIndex === index ? "-" : "+"}
-                </span>
+                </div>
               </div>
               <div
                 className={`${styles.accordionContent} ${
@@ -54,17 +61,11 @@ const Accordion = () => {
         ))}
       </div>
 
-
-      {shouldShowMoreButton && (
-        <div className="text-center mt-3">
-          <button
-            className={styles.viewMoreBtn} 
-            onClick={showMoreItems}
-          >
-            View More Reviews
-          </button>
-        </div>
-      )}
+      <div className="text-center mt-3">
+        <button className={styles.viewMoreBtn} onClick={toggleItemsVisibility}>
+          {isShowingAll ? "View Less Reviews" : "View More Reviews"}
+        </button>
+      </div>
     </div>
   );
 };

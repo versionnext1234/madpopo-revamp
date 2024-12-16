@@ -25,12 +25,13 @@
 }
 .accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   cursor: pointer;
   position: relative;
-  padding: 2.5rem;
+  padding: 2rem;
   color: #666;
+  width: 100%;
 }
 .accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac span {
   flex: 1 1;
@@ -38,6 +39,8 @@
   font-weight: 600;
   color: #123455;
   font-family: "Urbanist", sans-serif;
+  white-space: normal;
+  margin-right: 3rem;
 }
 .accordion_accordion__CAPPs .accordion_accordionHeader__xj_ac .accordion_accordionIcon__OSBIJ {
   position: absolute;
@@ -66,13 +69,15 @@
   transition: max-height 0.5s ease, padding 0.5s ease;
 }
 .accordion_accordion__CAPPs .accordion_accordionContent__Wxu3a.accordion_open__cSJdn {
-  max-height: 200px;
-  padding: 2rem;
+  max-height: 2000px;
+  padding: 1rem 2rem;
   overflow: visible;
 }
 .accordion_accordion__CAPPs .accordion_accordionContent__Wxu3a p {
   font-size: 1.6rem;
   text-align: left;
+  color: #707070;
+  margin-top: 1rem;
 }
 
 .accordion_viewMoreBtn__lpkDX {
@@ -954,11 +959,6 @@
 .plans_planSection__M2seb {
   padding: 4rem 0;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .plans_planSection__M2seb {
-    padding: 0 0;
-  }
-}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/homepage/guaranteeBannerSection/guaranteeBanner.module.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -1252,11 +1252,6 @@
 .question_backgroundWrap__9i51X {
   padding: 4rem 0;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .question_backgroundWrap__9i51X {
-    padding: 0 0;
-  }
-}
 .question_backgroundWrap__9i51X .question_backgroundColor__YYYvL {
   background-color: #F4F5FF;
   padding: 3rem 0;
@@ -1348,11 +1343,6 @@
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .tabs_tabsContainer__oh_4A {
-    padding: 0 0;
-  }
 }
 
 .tabs_tabHeaders__xNekD {

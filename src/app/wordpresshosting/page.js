@@ -7,6 +7,7 @@ import BannerSection3 from '@/components/wordpresshosting/bannersection/bannerse
 import BannerSection4 from '@/components/wordpresshosting/bannersection/bannersection4'
 import BannerSection5 from '@/components/wordpresshosting/bannersection/bannersection5'
 import BannerSection6 from '@/components/wordpresshosting/bannersection/bannersection6'
+import { wordpressHostingData } from '@/mockdata/accordionMockdata'
 import React from 'react'
 
 const page = () => {
@@ -19,7 +20,7 @@ const page = () => {
             <BannerSection5 />
             <BannerSection6 />
             <Domain />
-            <QuestionSection />
+            <QuestionSection data={wordpressHostingData}/>
         </>
     )
 }
