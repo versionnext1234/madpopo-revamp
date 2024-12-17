@@ -13,7 +13,7 @@ export default function MegaMenuNavbar() {
         <header id={style.headerSection}>
           <div className="container">
             <nav className={`navbar navbar-expand-lg ${style.navbarexpandlg}`}>
-              <LeftBoxWrap/>
+            <LeftBoxWrap/>
               <button
                 className="navbar-toggler"
                 type="button"
